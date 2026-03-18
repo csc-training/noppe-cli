@@ -1,2 +1,2 @@
-# noppe
-Training material ran on top of Noppe
+# noppe-cli
+Commandline interface training material ran on top of Noppe.
