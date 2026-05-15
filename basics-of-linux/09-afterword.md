@@ -12,10 +12,10 @@ However, please do note that the operating state or modified files are not store
 
 ## Logging in
 
-First, log in the Linux machine. The login is `__USERNAME__` and `__PASSWORD__`:
+First, log in the Linux machine. The login is `{{USERNAME}}` and `{{PASSWORD}}`:
 
 ::: terminal
-__HOSTNAME__ login: __USERNAME__
+{{HOSTNAME}} login: {{USERNAME}}
 Password:
 :::
 
@@ -26,7 +26,7 @@ Please note that nothing is shown when you type in the password. But it is there
 After successful login, you should have the following view:
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ## Logging out

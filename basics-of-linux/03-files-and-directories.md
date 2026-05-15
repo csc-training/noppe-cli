@@ -7,8 +7,8 @@ Let's start by creating some files. But first - make sure that you are in your h
 Type in a command: `touch emptyfile`.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ touch emptyfile
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ touch emptyfile
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Verify that a file was created. For example with the `ls` command.
@@ -16,10 +16,10 @@ Verify that a file was created. For example with the `ls` command.
 Then try out a command: `echo Hello World > textfile`. Again, verify that the file called `textfile` was created.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ echo Hello World > textfile
-__USERNAME__@__HOSTNAME__:~$ ls
+{{USERNAME}}@{{HOSTNAME}}:~$ echo Hello World > textfile
+{{USERNAME}}@{{HOSTNAME}}:~$ ls
 emptyfile  my-work  noppe-cli  textfile
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Create yet another file called `d`.
@@ -29,8 +29,8 @@ Create yet another file called `d`.
 Type in a command: `mkdir directory`.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ mkdir directory
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ mkdir directory
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Verify that a directory called `directory` was created.
@@ -42,9 +42,9 @@ Then create another directory called `f`.
 List the content of your home directory with the `ls` command.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ ls
+{{USERNAME}}@{{HOSTNAME}}:~$ ls
 d  emptyfile  f  my-work  noppe-cli  textfile
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 After some time has passed, it can be difficult to identify files with obscure names. The `file` command can help you to identify the file type.
@@ -52,19 +52,19 @@ After some time has passed, it can be difficult to identify files with obscure n
 Let's identify all the files in our home directory.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ file d
+{{USERNAME}}@{{HOSTNAME}}:~$ file d
 d: empty
-__USERNAME__@__HOSTNAME__:~$ file emptyfile
+{{USERNAME}}@{{HOSTNAME}}:~$ file emptyfile
 emptyfile: empty
-__USERNAME__@__HOSTNAME__:~$ file f
+{{USERNAME}}@{{HOSTNAME}}:~$ file f
 f: directory
-__USERNAME__@__HOSTNAME__:~$ file my-work
+{{USERNAME}}@{{HOSTNAME}}:~$ file my-work
 my-work: directory
-__USERNAME__@__HOSTNAME__:~$ file noppe-cli
+{{USERNAME}}@{{HOSTNAME}}:~$ file noppe-cli
 noppe-cli: directory
-__USERNAME__@__HOSTNAME__:~$ file textfile
+{{USERNAME}}@{{HOSTNAME}}:~$ file textfile
 textfile: ASCII text
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ## Removing files and directories
@@ -74,9 +74,9 @@ Type in a command `rm emptyfile` to remove the `emptyfile`. Verify that the file
 Then, try to remove the directory `f` with a command `rm f`.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ rm f
+{{USERNAME}}@{{HOSTNAME}}:~$ rm f
 rm: cannot remove 'f': Is a directory
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Try again with a command `rmdir f`. Verify that the directory was removed.
@@ -84,9 +84,9 @@ Try again with a command `rmdir f`. Verify that the directory was removed.
 Next try to remove the directory `my-work` with a command: `rmdir my-work`.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ rmdir my-work
+{{USERNAME}}@{{HOSTNAME}}:~$ rmdir my-work
 rmdir: failed to remove 'my-work': Directory not empty
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ::: beware

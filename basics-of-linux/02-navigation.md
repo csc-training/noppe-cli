@@ -17,8 +17,8 @@ You can change location within this structure using the `cd` command.
 Now, change your location to the root directory: `cd /`.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ cd /
-__USERNAME__@__HOSTNAME__:/$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ cd /
+{{USERNAME}}@{{HOSTNAME}}:/$ █
 :::
 
 You can check your current location using the `pwd` command.
@@ -28,9 +28,9 @@ You can check your current location using the `pwd` command.
 Type in the `pwd` command.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:/$ pwd
+{{USERNAME}}@{{HOSTNAME}}:/$ pwd
 /
-__USERNAME__@__HOSTNAME__:/$ █
+{{USERNAME}}@{{HOSTNAME}}:/$ █
 :::
 
 You can view the directory contents using the `ls` command.
@@ -40,10 +40,10 @@ You can view the directory contents using the `ls` command.
 Type in the `ls` command.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:/$ ls
+{{USERNAME}}@{{HOSTNAME}}:/$ ls
 app  boot  etc   lib                lib64  mnt  proc    root  sbin  start  tmp  var
 bin  dev   home  lib.usr-is-merged  media  opt  readme  run   srv   sys    usr
-__USERNAME__@__HOSTNAME__:/$ █
+{{USERNAME}}@{{HOSTNAME}}:/$ █
 :::
 
 There are a total of 23 entries in the root directory.
@@ -54,21 +54,21 @@ Now, let's return to our home directory.
    a) Type in `cd home`,
    b) use the `pwd` command to check your location,
    c) use the `ls` command to check the contents of the `home` directory.
-   d) Type in `cd __USERNAME__` command.
+   d) Type in `cd {{USERNAME}}` command.
    e) Again, check your location in the directory structure and the content of your home directory.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:/$ cd home
-__USERNAME__@__HOSTNAME__:/home$ pwd
+{{USERNAME}}@{{HOSTNAME}}:/$ cd home
+{{USERNAME}}@{{HOSTNAME}}:/home$ pwd
 /home
-__USERNAME__@__HOSTNAME__:/home$ ls
-ubuntu  __USERNAME__
-__USERNAME__@__HOSTNAME__:/home$ cd __USERNAME__
-__USERNAME__@__HOSTNAME__:~$ pwd
-/home/__USERNAME__
-__USERNAME__@__HOSTNAME__:~$ ls
+{{USERNAME}}@{{HOSTNAME}}:/home$ ls
+ubuntu  {{USERNAME}}
+{{USERNAME}}@{{HOSTNAME}}:/home$ cd {{USERNAME}}
+{{USERNAME}}@{{HOSTNAME}}:~$ pwd
+/home/{{USERNAME}}
+{{USERNAME}}@{{HOSTNAME}}:~$ ls
 my-work  noppe-cli
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ::: question

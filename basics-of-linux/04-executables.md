@@ -13,26 +13,26 @@ Let's create the following simple script:
 echo "Hello world"
 ```
 
-If you know how to use text editors such as Nano or Vim, feel free to help yourself! If not, don't worry. They will be covered in more detail in the chapter [Edit](06.1-edit.md) files.
+If you know how to use text editors such as Nano or Vim, feel free to help yourself! If not, don't worry. They will be covered in more detail in the chapter [Edit](06.2-edit.md) files.
 
 For now, it is sufficient to type out a command `cat << EOF > scrp` and then the actual script followed by `EOF`.
 
 It should look something like this:
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ cat << EOF > scrp
+{{USERNAME}}@{{HOSTNAME}}:~$ cat << EOF > scrp
 &gt; #!/bin/bash
 &gt; echo "Hello world"
 &gt; EOF
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Use the `ls` command to verify that you have successfully created a file called `scrp`. Then check what the `file scrp` command prints out.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ file scrp
+{{USERNAME}}@{{HOSTNAME}}:~$ file scrp
 scrp: Bourne-Again shell script, ASCII text executable
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ## Binary 
@@ -48,12 +48,12 @@ return 0;
 You can either use a text editor or enter the command `cat << EOF > main.c` as follows:
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ cat << EOF > main.c
+{{USERNAME}}@{{HOSTNAME}}:~$ cat << EOF > main.c
 &gt; int main(void) {
 &gt; return 0;
 &gt; }
 &gt; EOF
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Check out the file type with a `file main.c` command and then compile the file into a binary called `bnry` with gcc: `gcc main.c -o bnry`.
@@ -67,14 +67,14 @@ If you omit the `-o bnry` from the gcc command, the default output file is calle
 So, in summary, the view should be as follows:
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ file main.c
+{{USERNAME}}@{{HOSTNAME}}:~$ file main.c
 main.c: C source, ASCII text
-__USERNAME__@__HOSTNAME__:~$ gcc main.c -o bnry
-__USERNAME__@__HOSTNAME__:~$ ls
+{{USERNAME}}@{{HOSTNAME}}:~$ gcc main.c -o bnry
+{{USERNAME}}@{{HOSTNAME}}:~$ ls
 bnry  main.c  my-work  scrp
-__USERNAME__@__HOSTNAME__:~$ file bnry
+{{USERNAME}}@{{HOSTNAME}}:~$ file bnry
 bnry: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=bd81384dbb49670453331f07c855728653ba4136, for GNU/Linux 3.2.0, not stripped
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ::: service
@@ -92,14 +92,14 @@ To execute files in the current directory, a [relative path](02.1-food-for-thoug
 Then, let's try executing our `scrp` file. Try out both formats of the command: `./scrp` and `scrp`.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ ./bnry
-__USERNAME__@__HOSTNAME__:~$ bnry
+{{USERNAME}}@{{HOSTNAME}}:~$ ./bnry
+{{USERNAME}}@{{HOSTNAME}}:~$ bnry
 -bash: bnry: command not found
-__USERNAME__@__HOSTNAME__:~$ ./scrp
+{{USERNAME}}@{{HOSTNAME}}:~$ ./scrp
 -bash: scrp: Permission denied
-__USERNAME__@__HOSTNAME__:~$ scrp
+{{USERNAME}}@{{HOSTNAME}}:~$ scrp
 -bash: scrp: command not found
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Notice how the executions `./scrp` and `scrp` produced different error messages. The first indicates that the file was found; the latter has the same error as the 'bnry' file.
@@ -107,10 +107,10 @@ Notice how the executions `./scrp` and `scrp` produced different error messages.
 Add execution [permission](03.1-file-properties.md) for the owner of the scrp file: `chmod u+x scrp` and then try to execute the file again.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ chmod u+x scrp
-__USERNAME__@__HOSTNAME__:~$ ./scrp
+{{USERNAME}}@{{HOSTNAME}}:~$ chmod u+x scrp
+{{USERNAME}}@{{HOSTNAME}}:~$ ./scrp
 Hello world
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 Remove the execute permission (`u-x`) from the `bnry` file, and then try executing it.
@@ -124,15 +124,15 @@ You can use the `whereis` command to find the files in the system. This prints t
 First, execute the command `whereis rm`, then `file /usr/bin/rm`. Repeat for as many other system executables as you wish.
 
 ::: terminal
-__USERNAME__@__HOSTNAME__:~$ whereis rm
+{{USERNAME}}@{{HOSTNAME}}:~$ whereis rm
 /usr/bin/rm
-__USERNAME__@__HOSTNAME__:~$ file /usr/bin/rm
+{{USERNAME}}@{{HOSTNAME}}:~$ file /usr/bin/rm
 /usr/bin/rm: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=c851b88cc2a078328d400214f39f232433195081, for GNU/Linux 3.2.0, stripped
-__USERNAME__@__HOSTNAME__:~$ whereis fgrep
+{{USERNAME}}@{{HOSTNAME}}:~$ whereis fgrep
 /usr/bin/fgrep
-__USERNAME__@__HOSTNAME__:~$ file /usr/bin/fgrep
+{{USERNAME}}@{{HOSTNAME}}:~$ file /usr/bin/fgrep
 fgrep: POSIX shell script, ASCII text executable
-__USERNAME__@__HOSTNAME__:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 The next chapter is about [Arguments](04.1-arguments.md).

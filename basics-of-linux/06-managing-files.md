@@ -21,18 +21,18 @@ The last command may seem confusing, as it could be interpreted as copying a fil
 Verify the content of the `dir-copy` directory with the command: `ls -il dir-copy`. Notice the different file attributes and compare them to the originals, if you wish.
 
 ::: terminal
-__HOSTNAME__@__USERNAME__:~$ touch emptyfile
-__HOSTNAME__@__USERNAME__:~$ echo Hello > file-with-text
-__HOSTNAME__@__USERNAME__:~$ mkdir subdir
-__HOSTNAME__@__USERNAME__:~$ cp emptyfile another-empty
-__HOSTNAME__@__USERNAME__:~$ cp file-with-text subdir/textfile-copy
-__HOSTNAME__@__USERNAME__:~$ cp -R subdir dir-copy
-__HOSTNAME__@__USERNAME__:~$ cp emptyfile dir-copy
-__HOSTNAME__@__USERNAME__:~$ ls -il dir-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ touch emptyfile
+{{HOSTNAME}}@{{USERNAME}}:~$ echo Hello > file-with-text
+{{HOSTNAME}}@{{USERNAME}}:~$ mkdir subdir
+{{HOSTNAME}}@{{USERNAME}}:~$ cp emptyfile another-empty
+{{HOSTNAME}}@{{USERNAME}}:~$ cp file-with-text subdir/textfile-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ cp -R subdir dir-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ cp emptyfile dir-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ ls -il dir-copy
 total 4
-525372 -rw-rw-r-- 1 __USERNAME__ __USERNAME__ 0 Apr  6 05:36 emptyfile
-525371 -rw-rw-r-- 1 __USERNAME__ __USERNAME__ 6 Apr  6 05:33 textfile-copy
-__HOSTNAME__@__USERNAME__:~$ █
+525372 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 0 Apr  6 05:36 emptyfile
+525371 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 6 Apr  6 05:33 textfile-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ █
 :::
 
 ## Move
@@ -46,19 +46,19 @@ You can verify that they are the same file by using the `ls -il` command to comp
 It's also possible to move files and directories to a different location while preserving the original name: `mv dir-copy subdir` moves the directory `dir-copy` and its contents under `subdir` directory. Verify the result using the `ls -ilR subdir` command.
 
 ::: terminal
-__HOSTNAME__@__USERNAME__:~$ mv another-empty backup-of-emptyfile
-__HOSTNAME__@__USERNAME__:~$ mv dir-copy subdir
-__HOSTNAME__@__USERNAME__:~$ ls -ilR subdir
+{{HOSTNAME}}@{{USERNAME}}:~$ mv another-empty backup-of-emptyfile
+{{HOSTNAME}}@{{USERNAME}}:~$ mv dir-copy subdir
+{{HOSTNAME}}@{{USERNAME}}:~$ ls -ilR subdir
 subdir/:
 total 8
-525370 drwxrwxr-x 2 __USERNAME__ __USERNAME__ 4096 Apr 06 05:36 dir-copy
-525369 -rw-rw-r-- 1 __USERNAME__ __USERNAME__    6 Apr 06 05:33 textfile-copy
+525370 drwxrwxr-x 2 {{USERNAME}} {{USERNAME}} 4096 Apr 06 05:36 dir-copy
+525369 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}}    6 Apr 06 05:33 textfile-copy
 
 subdir/dir-copy:
 total 4
-525372 -rw-rw-r-- 1 __USERNAME__ __USERNAME__ 0 Apr 06 05:36 emptyfile
-525371 -rw-rw-r-- 1 __USERNAME__ __USERNAME__ 6 Apr 06 05:33 textfile-copy
-__HOSTNAME__@__USERNAME__:~$ █
+525372 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 0 Apr 06 05:36 emptyfile
+525371 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 6 Apr 06 05:33 textfile-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ █
 :::
 
 ### Rename
@@ -74,14 +74,14 @@ Files in different locations can also be deleted: `rm subdir/textfile-copy`.
 You can use the rm command to delete entire directories, including their contents: `rm -r subdir/dir-copy` command deletes the `dir-copy` directory and its contents.
 
 ::: terminal
-__HOSTNAME__@__USERNAME__:~$ rm backup-of-emptyfile
-__HOSTNAME__@__USERNAME__:~$ rm subdir/textfile-copy
-__HOSTNAME__@__USERNAME__:~$ rm -r subdir/dir-copy
-__HOSTNAME__@__USERNAME__:~$ █
+{{HOSTNAME}}@{{USERNAME}}:~$ rm backup-of-emptyfile
+{{HOSTNAME}}@{{USERNAME}}:~$ rm subdir/textfile-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ rm -r subdir/dir-copy
+{{HOSTNAME}}@{{USERNAME}}:~$ █
 :::
 
 ::: note
 As emphasised earlier, exercise caution when deleting files. There is no automatic backup or 'Trash' functionality for files deleted using the 'rm' command. In particular, it is easy to make a mistake when deleting directories recursively.
 :::
 
-That's it! You can now continue with the [Edit](06.1-edit.md) chapter.
+That's it! You can now continue with the [Viewing files](06.1-viewing-files.md) chapter.

@@ -102,14 +102,19 @@
                     "file": "06-managing-files.md"
                 },
                 {
-                    "id": "06.1-edit",
-                    "title": "6.1 Edit",
-                    "file": "06.1-edit.md"
+                    "id": "06.1-viewing-files",
+                    "title": "6.1 Viewing files",
+                    "file": "06.1-viewing-files.md"
                 },
                 {
-                    "id": "06.2-food-for-thought",
-                    "title": "6.2 Food for Thought",
-                    "file": "06.2-food-for-thought.md"
+                    "id": "06.2-edit",
+                    "title": "6.2 Edit",
+                    "file": "06.2-edit.md"
+                },
+                {
+                    "id": "06.3-food-for-thought",
+                    "title": "6.3 Food for Thought",
+                    "file": "06.3-food-for-thought.md"
                 },
                 {
                     "id": "07-processes",
