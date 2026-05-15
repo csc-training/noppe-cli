@@ -8,7 +8,7 @@ However, this also means that the operating state or modified files (or files yo
 
 ## Logging in
 
-The login is `__USERNAME__` and `__PASSWORD__`.
+The login is `{{USERNAME}}` and `{{PASSWORD}}`.
 
 ## Environment
 
