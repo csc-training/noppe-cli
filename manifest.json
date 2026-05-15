@@ -1,0 +1,228 @@
+{
+    "title": "Noppe CLI Learning Materials",
+    "topics": [
+	{
+	    "id": "all-courses",
+	    "title": "Noppe CLI",
+	    "chapters": [
+		{
+	            "id": "00-toc",
+		    "title": "All materials",
+		    "file": "00-toc.md"
+		},
+		{
+	            "id": "01-getting-started",
+		    "title": "Getting started",
+		    "file": "01-getting-started.md"
+		},
+		{
+	            "id": "99-ref",
+		    "title": "Reference card",
+		    "file": "99-ref.md"
+		}
+	    ]
+	},
+        {
+            "id": "basics-of-linux",
+            "title": "Basics of Linux",
+            "chapters": [
+                {
+                    "id": "00-toc",
+                    "title": "Table of contents",
+                    "file": "00-toc.md"
+                },
+                {
+                    "id": "01-introduction",
+                    "title": "1. Introduction",
+                    "file": "01-introduction.md"
+                },
+                {
+                    "id": "01.1-food-for-thought",
+                    "title": "1.1 Food for Thought",
+                    "file": "01.1-food-for-thought.md"
+                },
+                {
+                    "id": "02-navigation",
+                    "title": "2. Navigation",
+                    "file": "02-navigation.md"
+                },
+                {
+                    "id": "02.1-food-for-thought",
+                    "title": "2.1 Food for Thought",
+                    "file": "02.1-food-for-thought.md"
+                },
+                {
+                    "id": "03-files-and-directories",
+                    "title": "3. Files and directories",
+                    "file": "03-files-and-directories.md"
+                },
+                {
+                    "id": "03.1-file-properties",
+                    "title": "3.1 File properties",
+                    "file": "03.1-file-properties.md"
+                },
+                {
+                    "id": "03.2-links",
+                    "title": "3.2 Links",
+                    "file": "03.2-links.md"
+                },
+                {
+                    "id": "03.3-food-for-thought",
+                    "title": "3.3 Food for Thought",
+                    "file": "03.3-food-for-thought.md"
+                },
+                {
+                    "id": "04-executables",
+                    "title": "4. Executables",
+                    "file": "04-executables.md"
+                },
+                {
+                    "id": "04.1-arguments",
+                    "title": "4.1 Arguments",
+                    "file": "04.1-arguments.md"
+                },
+                {
+                    "id": "04.2-standard-streams",
+                    "title": "4.2 Standard streams",
+                    "file": "04.2-standard-streams.md"
+                },
+                {
+                    "id": "04.3-food-for-thought",
+                    "title": "4.3 Food for Thought",
+                    "file": "04.3-food-for-thought.md"
+                },
+                {
+                    "id": "05-midvoyage",
+                    "title": "5. Midvoyage",
+                    "file": "05-midvoyage.md"
+                },
+                {
+                    "id": "06-managing-files",
+                    "title": "6. Managing files",
+                    "file": "06-managing-files.md"
+                },
+                {
+                    "id": "06.1-edit",
+                    "title": "6.1 Edit",
+                    "file": "06.1-edit.md"
+                },
+                {
+                    "id": "06.2-food-for-thought",
+                    "title": "6.2 Food for Thought",
+                    "file": "06.2-food-for-thought.md"
+                },
+                {
+                    "id": "07-processes",
+                    "title": "7. Processes",
+                    "file": "07-processes.md"
+                },
+                {
+                    "id": "07.1-food-for-thought",
+                    "title": "7.1 Food for Thought",
+                    "file": "07.1-food-for-thought.md"
+                },
+                {
+                    "id": "08-redirections",
+                    "title": "8. Redirections",
+                    "file": "08-redirections.md"
+                },
+                {
+                    "id": "08.1-food-for-thought",
+                    "title": "8.1 Food for Thought",
+                    "file": "08.1-food-for-thought.md"
+                },
+                {
+                    "id": "09-afterword",
+                    "title": "9. Afterword",
+                    "file": "09-afterword.md"
+                }
+            ]
+        },
+        {
+            "id": "basics-of-slurm",
+            "title": "Basics of Slurm",
+            "chapters": [
+                {
+                    "id": "00-toc",
+                    "title": "Table of contents",
+                    "file": "00-toc.md"
+                },
+                {
+                    "id": "01-welcome",
+                    "title": "1. Welcome",
+                    "file": "01-welcome.md"
+                },
+                {
+                    "id": "02-clusterinformation",
+                    "title": "2. Cluster Information",
+                    "file": "02-clusterinformation.md"
+                },
+                {
+                    "id": "03-squeue",
+                    "title": "3. The queue",
+                    "file": "03-squeue.md"
+                },
+                {
+                    "id": "04-run-info",
+                    "title": "4. Running your own code",
+                    "file": "04-run-info.md"
+                },
+                {
+                    "id": "05-hello-world",
+                    "title": "5. Hello World",
+                    "file": "05-hello-world.md"
+                },
+                {
+                    "id": "06-time-lim",
+                    "title": "6. Time limit",
+                    "file": "06-time-lim.md"
+                },
+                {
+                    "id": "07-memory-lim",
+                    "title": "7. Memory limit",
+                    "file": "07-memory-lim.md"
+                },
+                {
+                    "id": "08-run-file",
+                    "title": "8. Run files",
+                    "file": "08-run-file.md"
+                },
+                {
+                    "id": "09-omp",
+                    "title": "9. Shared memory parallelized job",
+                    "file": "09-omp.md"
+                },
+                {
+                    "id": "10-mpi",
+                    "title": "10. Distributed memory parallelized job",
+                    "file": "10-mpi.md"
+                },
+                {
+                    "id": "11-nested-par",
+                    "title": "11. Job parallelized with both distributed and shared memory",
+                    "file": "11-nested-par.md"
+                },
+                {
+                    "id": "12-mult-node",
+                    "title": "12. Multiple nodes",
+                    "file": "12-mult-node.md"
+                },
+                {
+                    "id": "13-array",
+                    "title": "13. Array jobs",
+                    "file": "13-array.md"
+                },
+                {
+                    "id": "14-array-run",
+                    "title": "14. Running array jobs",
+                    "file": "14-array-run.md"
+                },
+                {
+                    "id": "15-tips",
+                    "title": "15. Tips",
+                    "file": "15-tips.md"
+                }
+            ]
+        }
+    ]
+}
