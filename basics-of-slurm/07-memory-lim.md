@@ -16,7 +16,7 @@ The baseline can the be multiplied while adding some overhead (10-20%) to give a
 Exercises
 ---
 
-Please navigate to the directory `~/limits/memory/`.
+Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/limits/memory/`.
 
 1. Submit the job.
 2. The job should be killed by Slurm.

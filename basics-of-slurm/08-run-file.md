@@ -4,8 +4,8 @@ Run files
 It is often advantageous to use a bash script to generate and run ones Slurm script.
 For the user unfamiliar with shell scripting a brief introduction is in place &mdash; otherwise feel free to skip this part.
 
-Please navigate to the directory `~/run_file/` where you will find the Hello World program from `~/hello_world/cpp/`, a Makefile and shell script called `run_prog.sh`.
-Notice that lines 3-11 are essentially just an expanded version of the `slurmscript.sh` from `~/hello_world/cpp/`.
+Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/run_file/` where you will find the Hello World program from `~/noppe-cli/basics-of-slurm/src/hello_world/cpp/`, a Makefile and shell script called `run_prog.sh`.
+Notice that lines 3-11 are essentially just an expanded version of the `slurmscript.sh` from `~/noppe-cli/basics-of-slurm/src/hello_world/cpp/`.
 
 Let us go through the script so we can get an idea of what is going on. But the shell scripts are basically running commands that also could be run in the terminal.
 

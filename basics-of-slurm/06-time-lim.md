@@ -21,7 +21,7 @@ One can use benchmark tests for such estimates if those are available &mdash; ot
 Exercises
 ---
 
-Please navigate to the directory `~/limits/time/`.
+Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/limits/time/`.
 
 1. Submit the job.
 2. The job should be killed by Slurm.

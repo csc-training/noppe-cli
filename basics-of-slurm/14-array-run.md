@@ -31,7 +31,7 @@ In that case one thus needs to remember to escape the bash substitution for Slur
 
 Exercises
 ---
-Please navigate to the directory `~/array_job/cpp/` where you will find a Hello World program in C++ that takes the array index and array length as input, a Makefile and a job script.
+Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/array_job/cpp/` where you will find a Hello World program in C++ that takes the array index and array length as input, a Makefile and a job script.
 
 1. Add comments to the job script such that you comfortably understand the code.
 2. Run the script and check that it worked as intended.

@@ -1,7 +1,7 @@
 Hello World
 ---------------------
 
-Please navigate to the directory `~/hello_world/cpp/` where you will find a C++ program, a Makefile and a Slurm script to run the program.
+Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/hello_world/cpp/` where you will find a C++ program, a Makefile and a Slurm script to run the program.
 
 The basic structure of a Slurm script is:
 
