@@ -37,9 +37,14 @@
                     "file": "01-introduction.md"
                 },
                 {
-                    "id": "01.1-food-for-thought",
-                    "title": "1.1 Food for Thought",
-                    "file": "01.1-food-for-thought.md"
+                    "id": "01.1-command-line",
+                    "title": "1.1 Command-line",
+                    "file": "01.1-command-line.md"
+                },
+                {
+                    "id": "01.2-food-for-thought",
+                    "title": "1.2 Food for Thought",
+                    "file": "01.2-food-for-thought.md"
                 },
                 {
                     "id": "02-navigation",
@@ -97,14 +102,14 @@
                     "file": "05-midvoyage.md"
                 },
                 {
-                    "id": "06-managing-files",
-                    "title": "6. Managing files",
-                    "file": "06-managing-files.md"
+                    "id": "06-working-with-files",
+                    "title": "6. Working with files",
+                    "file": "06-working-with-files.md"
                 },
                 {
-                    "id": "06.1-viewing-files",
-                    "title": "6.1 Viewing files",
-                    "file": "06.1-viewing-files.md"
+                    "id": "06.1-view",
+                    "title": "6.1 View",
+                    "file": "06.1-view.md"
                 },
                 {
                     "id": "06.2-edit",

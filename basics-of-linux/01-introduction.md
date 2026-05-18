@@ -35,4 +35,4 @@ Type in a command `exit` and press enter.
 
 You managed to log out? Great!
 
-Now log back in and continue to [the Food for Thought of the Introduction](01.1-food-for-thought.md).
+Now log back in and continue to [the Command-line chapter](01.1-command-line.md).

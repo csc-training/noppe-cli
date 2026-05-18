@@ -1,4 +1,4 @@
-# Managing files
+# Working with files
 
 The following commands all assume that a file already exists. If needed, you can create some using commands such as `touch emptyfile` or `echo Hello > file-with-text`.
 
@@ -84,4 +84,4 @@ You can use the rm command to delete entire directories, including their content
 As emphasised earlier, exercise caution when deleting files. There is no automatic backup or 'Trash' functionality for files deleted using the 'rm' command. In particular, it is easy to make a mistake when deleting directories recursively.
 :::
 
-That's it! You can now continue with the [Viewing files](06.1-viewing-files.md) chapter.
+That's it! You can now continue with the [View](06.1-view.md) chapter.
