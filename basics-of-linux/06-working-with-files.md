@@ -21,23 +21,23 @@ The last command may seem confusing, as it could be interpreted as copying a fil
 Verify the content of the `dir-copy` directory with the command: `ls -il dir-copy`. Notice the different file attributes and compare them to the originals, if you wish.
 
 ::: terminal
-{{HOSTNAME}}@{{USERNAME}}:~$ touch emptyfile
-{{HOSTNAME}}@{{USERNAME}}:~$ echo Hello > file-with-text
-{{HOSTNAME}}@{{USERNAME}}:~$ mkdir subdir
-{{HOSTNAME}}@{{USERNAME}}:~$ cp emptyfile another-empty
-{{HOSTNAME}}@{{USERNAME}}:~$ cp file-with-text subdir/textfile-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ cp -R subdir dir-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ cp emptyfile dir-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ ls -il dir-copy
+{{USERNAME}}@{{HOSTNAME}}:~$ touch emptyfile
+{{USERNAME}}@{{HOSTNAME}}:~$ echo Hello > file-with-text
+{{USERNAME}}@{{HOSTNAME}}:~$ mkdir subdir
+{{USERNAME}}@{{HOSTNAME}}:~$ cp emptyfile another-empty
+{{USERNAME}}@{{HOSTNAME}}:~$ cp file-with-text subdir/textfile-copy
+{{USERNAME}}@{{HOSTNAME}}:~$ cp -R subdir dir-copy
+{{USERNAME}}@{{HOSTNAME}}:~$ cp emptyfile dir-copy
+{{USERNAME}}@{{HOSTNAME}}:~$ ls -il dir-copy
 total 4
 525372 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 0 Apr  6 05:36 emptyfile
 525371 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 6 Apr  6 05:33 textfile-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ## Move
 
-In terms of usage, moving and copying files are very similar: `mv another-empty backup-of-emptyfile` command changes the name of the `another-empty` file to `backup-of-emptyfile`.
+In terms of usage, moving and copying files are very similar: `mv another-empty backup-of-emptyfile` command changes the name of the `another-empty` file to `backup-of-emptyfile`. Using the mv command in this way is a proper way to rename files.
 
 ::: service
 You can verify that they are the same file by using the `ls -il` command to compare the file's inode number before and after the `mv` command.
@@ -46,9 +46,9 @@ You can verify that they are the same file by using the `ls -il` command to comp
 It's also possible to move files and directories to a different location while preserving the original name: `mv dir-copy subdir` moves the directory `dir-copy` and its contents under `subdir` directory. Verify the result using the `ls -ilR subdir` command.
 
 ::: terminal
-{{HOSTNAME}}@{{USERNAME}}:~$ mv another-empty backup-of-emptyfile
-{{HOSTNAME}}@{{USERNAME}}:~$ mv dir-copy subdir
-{{HOSTNAME}}@{{USERNAME}}:~$ ls -ilR subdir
+{{USERNAME}}@{{HOSTNAME}}:~$ mv another-empty backup-of-emptyfile
+{{USERNAME}}@{{HOSTNAME}}:~$ mv dir-copy subdir
+{{USERNAME}}@{{HOSTNAME}}:~$ ls -ilR subdir
 subdir/:
 total 8
 525370 drwxrwxr-x 2 {{USERNAME}} {{USERNAME}} 4096 Apr 06 05:36 dir-copy
@@ -58,7 +58,7 @@ subdir/dir-copy:
 total 4
 525372 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 0 Apr 06 05:36 emptyfile
 525371 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 6 Apr 06 05:33 textfile-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ### Rename
@@ -74,10 +74,10 @@ Files in different locations can also be deleted: `rm subdir/textfile-copy`.
 You can use the rm command to delete entire directories, including their contents: `rm -r subdir/dir-copy` command deletes the `dir-copy` directory and its contents.
 
 ::: terminal
-{{HOSTNAME}}@{{USERNAME}}:~$ rm backup-of-emptyfile
-{{HOSTNAME}}@{{USERNAME}}:~$ rm subdir/textfile-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ rm -r subdir/dir-copy
-{{HOSTNAME}}@{{USERNAME}}:~$ █
+{{USERNAME}}@{{HOSTNAME}}:~$ rm backup-of-emptyfile
+{{USERNAME}}@{{HOSTNAME}}:~$ rm subdir/textfile-copy
+{{USERNAME}}@{{HOSTNAME}}:~$ rm -r subdir/dir-copy
+{{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ::: note

@@ -46,7 +46,7 @@ bin  dev   home  lib.usr-is-merged  media  opt  readme  run   srv   sys    usr
 {{USERNAME}}@{{HOSTNAME}}:/$ █
 :::
 
-There are a total of 23 entries in the root directory.
+There seem to be a total of 23 entries in this root directory.
 
 ## Back home again
 

@@ -19,7 +19,3 @@
 ### Combining stdout and stderr (2>&1)
 
 ## tee
-
-## Process substitution
-
-`<(cmd)`

@@ -16,20 +16,28 @@ Remember that you are the sole owner of the temporary Linux environment on the r
 
 | Command | Example | Description|
 |-|-|-|
+| `exit` | `exit` | cause the shell to exit |
+| `export` | `export NAME=value` | set the export attribute for variables |
+| `tree` | `tree` | list contents of directories in a tree-like format |
+| `cd` | `cd directory` | change the working directory |
 | `pwd` | `pwd` | print name of current/working directory |
 | `ls` | `ls` | list directory contents |
-| `cd` | `cd directory` | change the working directory |
-| `whereis` | `whereis rm` | locate the binary, source, and manual page files for a command |
-| `file` | `file /usr/bin/rm` | determine file type |
 | `touch` | `touch somefile` | change file timestamps |
+| `echo` | `echo Hello World` | display a line of text |
+| `file` | `file /usr/bin/rm` | determine file type |
 | `mkdir` | `mkdir newdir` | make directories |
 | `rm` | `rm somefile` | remove files or directories |
 | `rmdir` | `rmdir directory` | remove empty directories |
 | `mv` | `mv oldname newname` | rename (move) a file |
-| `echo` | `echo Hello World` | display a line of text |
 | `cat` | `cat somefile` | concatenate and print files |
-| `env` | `env` | set the environment for command invocation |
-| `man` | `man rm` | display system documentation |
-| `grep` | `grep text fromfile` | search a file for a pattern |
+| `id` | `id` | print real and effective user and group IDs |
+| `chmod` | `chmod u+x file` | change file mode bits |
+| `dd` | `dd if=/dev/random of=file` | convert and copy a file |
+| `stat` | `stat somefile` | display file or file system status |
+| `ln` | `ln target link` | make links between files |
+| `du` | `du -h` | estimate file space usage |
+| `whereis` | `whereis rm` | locate the binary, source, and manual page files for a command |
 | `gcc` | `gcc main.c -o main` | GNU project C and C++ compiler |
-| `exit` | `exit` | cause the shell to exit |
+| `env` | `env` | set the environment for command invocation |
+| `grep` | `grep text fromfile` | search a file for a pattern |
+| `man` | `man rm` | display system documentation |
