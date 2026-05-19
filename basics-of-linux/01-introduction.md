@@ -4,9 +4,7 @@ Although you may encounter Linux in desktop environments, it is most likely that
 
 Server environments are accessed via a command line interface, like the one on the right.
 
-The Linux environment on the right is a functional Linux operating system that runs in a container. This means that you can perform the same actions as on most other Linux systems, but _without risking any damage to the operating system_.
-
-However, this also means that the operating state or modified files (or files you create) are not stored, when the environment is restarted.
+You are here to learn how to use one, so let's get started.
 
 ## Logging in
 
@@ -35,4 +33,4 @@ Type in a command `exit` and press enter.
 
 You managed to log out? Great!
 
-Now log back in and continue to [the Command-line chapter](01.1-command-line.md).
+Now log back in and continue to [the CLI chapter](01.1-cli.md).

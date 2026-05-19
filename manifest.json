@@ -37,9 +37,9 @@
                     "file": "01-introduction.md"
                 },
                 {
-                    "id": "01.1-command-line",
-                    "title": "1.1 Command-line",
-                    "file": "01.1-command-line.md"
+                    "id": "01.1-cli",
+                    "title": "1.1 CLI",
+                    "file": "01.1-cli.md"
                 },
                 {
                     "id": "01.2-food-for-thought",

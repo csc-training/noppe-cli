@@ -13,3 +13,5 @@ Welcome to the Linux Basics material.
 7. [Processes](07-processes.md)
 8. [Redirections](08-redirections.md)
 9. [Afterword](09-afterword.md)
+
+![Funded by EuroCC3](imgs/eurocc3.png)
