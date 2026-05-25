@@ -1,0 +1,13 @@
+// Reference card demo questions — one of each supported quiz type
+
+::ref-multichoice::Which admonition type uses amber colouring? {
+=question
+~note
+~tip
+~beware
+####The question (and quiz) admonition uses the Noppe amber colour.
+}
+
+::ref-truefalse::Quiz widgets load their questions from a separate .gift file. {TRUE ####Questions are defined in questions.gift in the course directory and referenced by ID in the markdown.}
+
+::ref-shortanswer::What file extension is used for the quiz question bank? {=.gift =gift ####Questions are stored in a GIFT-format file (questions.gift) in each course directory.}

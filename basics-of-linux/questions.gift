@@ -1,0 +1,40 @@
+// Linux basics quiz questions
+// Format: one question per block, separated by blank lines.
+// Supported types: multiple choice (= correct, ~ wrong), true/false, short answer (= accepted).
+// Per-choice feedback: option text #feedback text
+// General feedback: ####feedback text (inside the {} block, after all options)
+
+::q-linux-01::What is the top-level directory of the Linux filesystem called? {
+=Root directory (/)
+~Home directory (/home)
+~System directory (/sys)
+~Base directory (/base)
+####The root directory / is the starting point of the entire Linux filesystem hierarchy.
+}
+
+::q-linux-02::Which command prints your current working directory? {
+=pwd #Correct — pwd stands for "print working directory".
+~ls #ls lists the contents of a directory, not your location.
+~cd #cd changes directory, it does not print the current one.
+~dir #dir is a Windows/DOS command not standard on Linux.
+}
+
+::q-linux-03::Which command is used to change the current directory? {
+=cd
+~ls
+~mv
+~cp
+####cd stands for "change directory".
+}
+
+::q-linux-04::The command `ls -la` shows hidden files. {TRUE ####The -a flag tells ls to include entries starting with a dot (.), which are hidden by default.}
+
+::q-linux-05::Which character marks a hidden file or directory in Linux? {
+=. (dot)
+~_ (underscore)
+~# (hash)
+~- (hyphen)
+####Files and directories whose names start with a dot (.) are hidden from normal directory listings.
+}
+
+::q-linux-06::What does the shorthand `~` represent in a file path? {=home directory ####The tilde (~) expands to the current user's home directory, e.g. /home/user.}

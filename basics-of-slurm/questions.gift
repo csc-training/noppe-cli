@@ -1,0 +1,40 @@
+// Slurm basics quiz questions
+// Format: one question per block, separated by blank lines.
+// Supported types: multiple choice (= correct, ~ wrong), true/false, short answer (= accepted).
+// Per-choice feedback: option text #feedback text
+// General feedback: ####feedback text (inside the {} block, after all options)
+
+::q-slurm-01::Which Slurm command submits a batch job script? {
+=sbatch #Correct — sbatch queues a script for later execution.
+~srun #srun launches tasks interactively or within an existing allocation.
+~squeue #squeue shows the job queue, it does not submit jobs.
+~scancel #scancel cancels jobs.
+}
+
+::q-slurm-02::Which command shows the status of jobs currently in the Slurm queue? {
+=squeue
+~sbatch
+~sinfo
+~sacct
+####squeue lists queued and running jobs. Add -u $USER to filter by your username.
+}
+
+::q-slurm-03::The `#SBATCH` lines in a batch script are treated as comments by the shell. {TRUE ####Lines starting with # are shell comments, but sbatch reads and parses #SBATCH directives before executing the script.}
+
+::q-slurm-04::Which command cancels a running or queued Slurm job? {
+=scancel
+~squeue
+~srun
+~sinfo
+####scancel <jobid> cancels a job. Find job IDs with squeue.
+}
+
+::q-slurm-05::Which Slurm command displays information about nodes and partitions? {
+=sinfo
+~squeue
+~sbatch
+~sacct
+####sinfo shows the state of partitions and nodes in the cluster.
+}
+
+::q-slurm-06::What Slurm directive sets the number of CPU cores to request per task? {=--cpus-per-task =--cpus-per-task= ####Use #SBATCH --cpus-per-task=N to request N CPU cores for each task in your job.}
