@@ -37,7 +37,7 @@ total 4
 
 ## Move
 
-In terms of usage, moving and copying files are very similar: `mv another-empty backup-of-emptyfile` command changes the name of the `another-empty` file to `backup-of-emptyfile`. Using the mv command in this way is a proper way to rename files.
+In terms of usage, moving and copying files are very similar: `mv another-empty backup-of-emptyfile` command changes the name of the `another-empty` file to `backup-of-emptyfile`. Using the `mv` command in this way is a proper way to rename files.
 
 ::: service
 You can verify that they are the same file by using the `ls -il` command to compare the file's inode number before and after the `mv` command.
@@ -67,11 +67,11 @@ Some systems have a `rename` command available. If not, use the `mv` command: `m
 
 ## Delete
 
-As you might expect, the rm command works in a similar way to the cp and mv commands: `rm backup-of-emptyfile` command deletes the `backup-of-emptyfile` file.
+As you might expect, the `rm` command works in a similar way to the `cp` and `mv` commands: `rm backup-of-emptyfile` command deletes the `backup-of-emptyfile` file.
 
 Files in different locations can also be deleted: `rm subdir/textfile-copy`.
 
-You can use the rm command to delete entire directories, including their contents: `rm -r subdir/dir-copy` command deletes the `dir-copy` directory and its contents.
+You can use the `rm` command to delete entire directories, including their contents: `rm -r subdir/dir-copy` command deletes the `dir-copy` directory and its contents.
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ rm backup-of-emptyfile
