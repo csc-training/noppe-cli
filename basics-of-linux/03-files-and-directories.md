@@ -16,7 +16,7 @@ Verify that a file was created. For example with the `ls` command.
 Then try out a command: `echo Hello World > textfile`. Again, verify that the file called `textfile` was created.
 
 ::: note
-The `>` redirects the output into a file. This is covered in detail in the [Redirections](08-redirections.md) chapter.
+The `>` redirects the command's output into a file. This is covered in detail in the [Redirections](08-redirections.md) chapter.
 :::
 
 ::: terminal

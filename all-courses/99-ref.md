@@ -4,8 +4,7 @@
 
 ::: note
 Use for supplementary information that enriches understanding but is not
-required to complete the exercise — background context, terminology, or a clarifying
-detail.
+required to complete the exercise — background context, terminology, or a clarifying detail.
 :::
 
 ::: tip
