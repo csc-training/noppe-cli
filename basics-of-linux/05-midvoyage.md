@@ -17,7 +17,7 @@ Remember that you are the sole owner of the temporary Linux environment on the r
 | Command | Example | Description|
 |-|-|-|
 | `exit` | `exit` | cause the shell to exit |
-| `export` | `export NAME=value` | set the export attribute for variables |
+| `export` | `export NAME=value` | sets the variable NAME to the value `value` |
 | `tree` | `tree` | list contents of directories in a tree-like format |
 | `cd` | `cd directory` | change the working directory |
 | `pwd` | `pwd` | print name of current/working directory |
