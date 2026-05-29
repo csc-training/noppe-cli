@@ -81,7 +81,7 @@ You can use the `rm` command to delete entire directories, including their conte
 :::
 
 ::: note
-As emphasised earlier, exercise caution when deleting files. There is no automatic backup or 'Trash' functionality for files deleted using the 'rm' command. In particular, it is easy to make a mistake when deleting directories recursively.
+As emphasised earlier, exercise caution when deleting files. There is no automatic backup or 'Trash' functionality for files deleted using the `rm` command. In particular, it is easy to make a mistake when deleting directories recursively.
 :::
 
 That's it! You can now continue with the [View](06.1-view.md) chapter.

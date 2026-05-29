@@ -1,6 +1,9 @@
 # Midvoyage
 
-By now, you should be able to navigate the file structure, find your way around it, and recognise the different types of file.
+By now, you should be able to:
+1. navigate the file structure and find your way around it.
+2. recognise different file types.
+3. discover new system commands and learn how to use them.
 
 ::: guidance
 The most important thing is that you grasp the concepts of files and file structure.
@@ -12,7 +15,9 @@ If any of this seems unclear, I strongly recommend rehearsing and strengthening 
 Remember that you are the sole owner of the temporary Linux environment on the right. Explore it and feel free to experiment, for example with the commands below.
 :::
 
-## 
+## Spellbook
+
+This list shows all the commands that you have used so far.
 
 | Command | Example | Description|
 |-|-|-|
@@ -41,3 +46,5 @@ Remember that you are the sole owner of the temporary Linux environment on the r
 | `env` | `env` | set the environment for command invocation |
 | `grep` | `grep text fromfile` | search a file for a pattern |
 | `man` | `man rm` | display system documentation |
+
+Are you ready to continue your adventure? The [next chapter](06-working-with-files.md) awaits!

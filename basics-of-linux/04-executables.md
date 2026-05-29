@@ -86,7 +86,7 @@ Did you notice the colour of the entry for <span class="text-green">bnry</span> 
 Now, execute the `bnry` file with command `./bnry`. Then try to execute the same file with just `bnry`.
 
 ::: guidance
-To execute files in the current directory, a [relative path](02.1-food-for-thought.md) reference must be provided before the file name.
+To execute files in the current directory, a [relative path](02.1-food-for-thought.md#relative-path) reference must be provided before the file name.
 :::
 
 Then, let's try executing our `scrp` file. Try out both formats of the command: `./scrp` and `scrp`.
@@ -102,9 +102,9 @@ Then, let's try executing our `scrp` file. Try out both formats of the command: 
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
-Notice how the executions `./scrp` and `scrp` produced different error messages. The first indicates that the file was found; the latter has the same error as the 'bnry' file.
+Notice how the executions `./scrp` and `scrp` produced different error messages. The first indicates that the file was found; the latter has the same error as the `bnry` file execution had.
 
-Add execution [permission](03.1-file-properties.md) for the owner of the scrp file: `chmod u+x scrp` and then try to execute the file again.
+Add execution [permission](03.1-file-properties.md#iii-permissions) for the owner of the scrp file: `chmod u+x scrp` and then try to execute the file again.
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ chmod u+x scrp
