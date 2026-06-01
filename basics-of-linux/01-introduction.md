@@ -16,7 +16,7 @@ Password:
 :::
 
 ::: guidance
-Please note that nothing is shown when you type in the password. But it is there. Accept your input with an enter.
+Please note that nothing is shown when you type in the password. But it is there. Accept your input with `Enter ↵`.
 :::
 
 After successful login, you should have the following view:
@@ -29,7 +29,7 @@ After successful login, you should have the following view:
 
 Now, it is a good habit to always exit a session if you don't need it anymore.
 
-Type in a command `exit` and press enter.
+Type in a command `exit` and press `Enter ↵`.
 
 You managed to log out? Great!
 

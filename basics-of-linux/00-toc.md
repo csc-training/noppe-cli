@@ -12,6 +12,7 @@ Welcome to the Linux Basics material.
 6. [Working with files](06-working-with-files.md)
 7. [Processes](07-processes.md)
 8. [Redirections](08-redirections.md)
-9. [Afterword](09-afterword.md)
+9. [.bashrc](09-bashrc.md)
+10. [Afterword](10-afterword.md)
 
 ![Funded by EuroCC3](imgs/eurocc3.png)

@@ -142,9 +142,14 @@
                     "file": "08.1-food-for-thought.md"
                 },
                 {
-                    "id": "09-afterword",
-                    "title": "9. Afterword",
-                    "file": "09-afterword.md"
+                    "id": "09-bashrc",
+                    "title": "9. .bashrc",
+                    "file": "09-bashrc.md"
+                },
+                {
+                    "id": "10-afterword",
+                    "title": "10. Afterword",
+                    "file": "10-afterword.md"
                 }
             ]
         },
