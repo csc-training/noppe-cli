@@ -2,6 +2,8 @@
 
 This repository contains the course content for the [Noppe](https://noppe.csc.fi) CLI learning environment application.
 
+![Noppe Learning Environment](imgs/noppe-learning-env.png)
+
 ## The environment
 
 When you open the application, the browser window is split into two panels:
