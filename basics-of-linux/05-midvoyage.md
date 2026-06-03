@@ -44,17 +44,7 @@ This list shows all the commands that you have used so far.
 | `whereis` | `whereis rm` | locate the binary, source, and manual page files for a command | [man whereis](https://man7.org/linux/man-pages/man1/whereis.1.html) |
 | `gcc` | `gcc main.c -o main` | GNU project C and C++ compiler | [man gcc](https://man7.org/linux/man-pages/man1/gcc.1.html) |
 | `env` | `env` | set the environment for command invocation | [man env](https://man7.org/linux/man-pages/man1/env.1.html) |
-| `grep` | `grep text fromfile` | search a file for a pattern | [man grep](https://man7.org/linux/man-pages/man1/grep.1.html) |
+| `grep` | `grep text fromfile` | print lines that match patterns | [man grep](https://man7.org/linux/man-pages/man1/grep.1.html) |
 | `man` | `man rm` | display system documentation | [man man](https://man7.org/linux/man-pages/man1/man.1.html) |
-| `cp` | `cp source dest` | copy files and directories | [man cp](https://man7.org/linux/man-pages/man1/cp.1.html) |
-| `head` | `head somefile` | output the first part of files | [man head](https://man7.org/linux/man-pages/man1/head.1.html) |
-| `tail` | `tail somefile` | output the last part of files | [man tail](https://man7.org/linux/man-pages/man1/tail.1.html) |
-| `less` | `less somefile` | opposite of more | [man less](https://man7.org/linux/man-pages/man1/less.1.html) |
-| `reset` | `reset` | terminal initialization | [man reset](https://man7.org/linux/man-pages/man1/reset.1.html) |
-| `xxd` | `xxd binaryfile` | make a hex dump or do the reverse | [man xxd](https://linux.die.net/man/1/xxd) |
-| `strings` | `strings binaryfile` | print the sequences of printable characters in files | [man strings](https://man7.org/linux/man-pages/man1/strings.1.html) |
-| `nano` | `nano somefile` | Nano's ANOther editor, inspired by Pico | [man nano](https://linux.die.net/man/1/nano) |
-| `vim` | `vim somefile` | Vi IMproved, a programmer's text editor | [man vim](https://linux.die.net/man/1/vim) |
-| `source` | `source ~/.bashrc` | execute commands from a file in the current shell | [man source](https://man7.org/linux/man-pages/man1/dot.1p.html) |
 
 Are you ready to continue your adventure? The [next chapter](06-working-with-files.md) awaits!
