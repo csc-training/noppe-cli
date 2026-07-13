@@ -117,9 +117,14 @@
                     "file": "06.2-edit.md"
                 },
                 {
-                    "id": "06.3-food-for-thought",
-                    "title": "6.3 Food for Thought",
-                    "file": "06.3-food-for-thought.md"
+                    "id": "06.3-batch",
+                    "title": "6.3 Batch",
+                    "file": "06.3-batch.md"
+                },
+                {
+                    "id": "06.4-food-for-thought",
+                    "title": "6.4 Food for Thought",
+                    "file": "06.4-food-for-thought.md"
                 },
                 {
                     "id": "07-processes",

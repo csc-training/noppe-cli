@@ -21,9 +21,9 @@ It should look something like this:
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ cat << EOF > scrp
-&gt; #!/bin/bash
-&gt; echo "Hello world"
-&gt; EOF
+> #!/bin/bash
+> echo "Hello world"
+> EOF
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
@@ -49,10 +49,10 @@ You can either use a text editor or enter the command `cat << EOF > main.c` as f
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ cat << EOF > main.c
-&gt; int main(void) {
-&gt; return 0;
-&gt; }
-&gt; EOF
+> int main(void) {
+> return 0;
+> }
+> EOF
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
