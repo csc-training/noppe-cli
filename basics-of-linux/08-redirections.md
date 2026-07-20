@@ -95,6 +95,62 @@ The append syntax also works when redirecting errors or both streams.
 
 ### Input redirection (<)
 
+Although input redirection is rarely necessary in practice, it is helpful to have a basic understanding of the concept. Some commands only operate through input redirection, so you may encounter it at some point when using Linux.
+
+While we're on the topic, let's have some fun with it! Open a text editor (either Nano or Vim) and enter the following:
+
+```txt
+touch fruits.txt
+echo pineapple > fruits.txt
+echo banana >> fruits.txt
+echo mango >> fruits.txt
+echo orange >> fruits.txt
+echo apple >> fruits.txt
+```
+
+Save the file as `fruit-maker`.
+
+::: note
+Note the distinction from the bash script, though it is minuscule. Omit the shebang from the beginning of the file and do not make it executable.
+:::
+
+Then enter the command `bash < fruit-maker`. Verify the result using the `ls` and `cat fruits.txt` commands.
+
+::: terminal
+{{USERNAME}}@{{HOSTNAME}}:~$ vim fruit-maker
+{{USERNAME}}@{{HOSTNAME}}:~$ bash < fruit-maker
+{{USERNAME}}@{{HOSTNAME}}:~$ ls
+fruits.txt  my-work  noppe-cli
+{{USERNAME}}@{{HOSTNAME}}:~$ cat fruits.txt
+pineapple
+banana
+mango
+orange
+apple
+{{USERNAME}}@{{HOSTNAME}}:~$ █
+:::
+
+::: tip
+Think of the `fruit-maker` file as containing a series of keystrokes that you would need to perform anyway to achieve the desired result.
+:::
+
+For example, the `tr` command does not accept a file name as an argument. Try out the following command: `tr a-z A-Z < fruits.txt`. Then try the same command again, but without the `<` character.
+
+::: terminal
+{{USERNAME}}@{{HOSTNAME}}:~$ tr a-z A-Z < fruits.txt
+PINEAPPLE
+BANANA
+MANGO
+ORANGE
+APPLE
+{{USERNAME}}@{{HOSTNAME}}:~$ tr a-z A-Z fruits.txt
+tr: extra operand ‘fruits.txt’
+Try 'tr --help' for more information.
+{{USERNAME}}@{{HOSTNAME}}:~$ █
+:::
+
+Alternatively, pipe the contents of `fruits.txt` into the `tr` command to achieve the same result: `cat fruits.txt | tr a-z A-Z`.
+
 ## Pipes
 
 Piping is one of the most powerful features of *NIX operating systems. The Unix philosophy involves connecting the output of one command with the input of another, alongside the idea that 'each program should do one thing well'.
@@ -105,7 +161,7 @@ Try entering the following command:
 
 `ps -ef | tail -n +2 | sed -n '3p;5p' | awk '{print $2}' | paste -sd- | bc`
 
-You don't need to fully understand what this command does, but it's a great example of piping. 
+You don't need to fully understand what this command does, but it's a great example of the power of piping.
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ ps -ef
@@ -130,7 +186,56 @@ It finds the PID numbers and displays the difference between the third (`ttyd` w
 In this example, the number is `-55`, but yours will most likely be different.
 
 ::: guidance
-It is worth noting that piping commands is not always necessary. Consider the `fruits.txt` file, for example, and imagine that you want to search for the word `bananas`. While the command `cat fruits.txt | grep bananas` would work, it is better to simply type `grep bananas fruits.txt`.
+It is worth noting that piping commands is not always necessary. Consider the `fruits.txt` file, for example, and imagine that you want to search for the word `banana`. While the command `cat fruits.txt | grep banana` would work, it is better to simply type `grep banana fruits.txt`.
 :::
 
 ## tee
+
+Enter the command `sort < fruits.txt`. This will sort the entries in the file alphabetically and display the results in the terminal.
+
+Next, enter the command `sort fruits.txt > sorted.txt`. This time, the results are redirected to a file.
+
+Delete the `sorted.txt` file, then run the command `sort < fruits.txt | tee sorted.txt`. Check that the command's output was displayed **and** that the `sorted.txt` file was created with the desired content.
+
+::: terminal
+{{USERNAME}}@{{HOSTNAME}}:~$ sort < fruits.txt | tee sorted.txt
+apple
+banana
+mango
+orange
+pineapple
+{{USERNAME}}@{{HOSTNAME}}:~$ ls
+fruits.txt  my-work  noppe-cli  sorted.txt
+{{USERNAME}}@{{HOSTNAME}}:~$ cat sorted.txt
+apple
+banana
+mango
+orange
+pineapple
+{{USERNAME}}@{{HOSTNAME}}:~$ █
+:::
+
+As its name suggests (the physical shape of the letter `T`), the `tee` command splits the standard output so that it can be stored and processed further. Again remove the `sorted.txt` file with the `rm sorted.txt` command and then enter the following command: `sort < fruits.txt | tee sorted.txt | tr a-z A-Z > SORTED.txt`.
+
+Despite using the `tee` command, you will notice that nothing is printed to the terminal window this time. However, the standard output was stored in the `sorted.txt` file, processed further and then stored in the `SORTED.txt` file.
+
+Check the contents of both 'sorted' files.
+
+::: terminal
+{{USERNAME}}@{{HOSTNAME}}:~$ sort < fruits.txt | tee sorted.txt | tr a-z A-Z > SORTED.txt
+{{USERNAME}}@{{HOSTNAME}}:~$ cat sorted.txt
+apple
+banana
+mango
+orange
+pineapple
+{{USERNAME}}@{{HOSTNAME}}:~$ cat SORTED.txt
+APPLE
+BANANA
+MANGO
+ORANGE
+PINEAPPLE
+{{USERNAME}}@{{HOSTNAME}}:~$ █
+:::
+
+You can now move on to the [Food for Thought](08.1-food-for-thought.md) section of the chapter.
