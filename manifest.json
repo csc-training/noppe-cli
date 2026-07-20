@@ -132,9 +132,24 @@
                     "file": "07-processes.md"
                 },
                 {
-                    "id": "07.1-food-for-thought",
-                    "title": "7.1 Food for Thought",
-                    "file": "07.1-food-for-thought.md"
+                    "id": "07.1-listing",
+                    "title": "7.1 Listing",
+                    "file": "07.1-listing.md"
+                },
+                {
+                    "id": "07.2-running",
+                    "title": "7.2 Running",
+                    "file": "07.2-running.md"
+                },
+                {
+                    "id": "07.3-managing",
+                    "title": "7.3 Managing",
+                    "file": "07.3-managing.md"
+                },
+                {
+                    "id": "07.4-food-for-thought",
+                    "title": "7.4 Food for Thought",
+                    "file": "07.4-food-for-thought.md"
                 },
                 {
                     "id": "08-redirections",

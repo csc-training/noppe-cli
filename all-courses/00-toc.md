@@ -6,4 +6,4 @@ If this is your first time using Noppe's CLI learning environment, please take a
 
 ## Materials
 
-[![Getting Started](imgs/getting-started.png)](01-getting-started.md) [![Basics of Linux](imgs/basics-of-linux.png)](basics-of-linux/00-toc.md) [![Basics of Slurm](imgs/basics-of-slurm.png)](basics-of-slurm/00-toc.md) ![Basics of Python](imgs/basics-of-python.png)
+[<img src="imgs/getting-started.png" width=250 alt="Getting Started">](01-getting-started.md) [<img src="imgs/basics-of-linux.png" width=250 alt="Basics of Linux">](basics-of-linux/00-toc.md) [<img src="imgs/basics-of-slurm.png" width=250 alt="Basics of Slurm">](basics-of-slurm/00-toc.md) <img src="imgs/basics-of-python.png" width=250 alt="Basics of Python">
