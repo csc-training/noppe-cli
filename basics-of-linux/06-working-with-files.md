@@ -51,13 +51,13 @@ It's also possible to move files and directories to a different location while p
 {{USERNAME}}@{{HOSTNAME}}:~$ ls -ilR subdir
 subdir/:
 total 8
-525370 drwxrwxr-x 2 {{USERNAME}} {{USERNAME}} 4096 Apr 06 05:36 dir-copy
-525369 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}}    6 Apr 06 05:33 textfile-copy
+525370 drwxrwxr-x 2 {{USERNAME}} {{USERNAME}} 4096 Apr  6 05:36 dir-copy
+525369 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}}    6 Apr  6 05:33 textfile-copy
 
 subdir/dir-copy:
 total 4
-525372 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 0 Apr 06 05:36 emptyfile
-525371 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 6 Apr 06 05:33 textfile-copy
+525372 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 0 Apr  6 05:36 emptyfile
+525371 -rw-rw-r-- 1 {{USERNAME}} {{USERNAME}} 6 Apr  6 05:33 textfile-copy
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 

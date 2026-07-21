@@ -29,7 +29,6 @@ Then, run the command: `ps -ef`
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ ps -ef
-ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 07:27 ?        00:00:00 /usr/bin/tini -- /start
 root           7       1  0 07:27 ?        00:00:00 caddy run --config /etc/caddy/Caddyfile

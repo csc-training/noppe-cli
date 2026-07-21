@@ -47,7 +47,7 @@ List the content of your home directory with the `ls` command.
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-d  emptyfile  f  my-work  noppe-cli  textfile
+d  directory  emptyfile  f  my-work  noppe-cli  textfile
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
@@ -58,6 +58,8 @@ Let's identify all the files in our home directory.
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ file d
 d: empty
+{{USERNAME}}@{{HOSTNAME}}:~$ file directory
+directory: directory
 {{USERNAME}}@{{HOSTNAME}}:~$ file emptyfile
 emptyfile: empty
 {{USERNAME}}@{{HOSTNAME}}:~$ file f

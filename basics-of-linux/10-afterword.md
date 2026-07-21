@@ -42,6 +42,25 @@ You should now be able to perform basic operations using the command line interf
 | `strings` | `strings binaryfile` | print the sequences of printable characters in files | [man strings](https://man7.org/linux/man-pages/man1/strings.1.html) |
 | `nano` | `nano somefile` | Nano's ANOther editor, inspired by Pico | [man nano](https://linux.die.net/man/1/nano) |
 | `vim` | `vim somefile` | Vi IMproved, a programmer's text editor | [man vim](https://linux.die.net/man/1/vim) |
+| `tar` | `tar cf archive.tar dir/` | an archiving utility | [man tar](https://man7.org/linux/man-pages/man1/tar.1.html) |
+| `find` | `find ~ -name "somefile"` | search for files in a directory hierarchy | [man find](https://man7.org/linux/man-pages/man1/find.1.html) |
+| `pstree` | `pstree -p` | display a tree of processes | [man pstree](https://man7.org/linux/man-pages/man1/pstree.1.html) |
+| `ps` | `ps -ef` | report a snapshot of the current processes | [man ps](https://man7.org/linux/man-pages/man1/ps.1.html) |
+| `top` | `top` | display Linux processes | [man top](https://man7.org/linux/man-pages/man1/top.1.html) |
+| `watch` | `watch ps` | execute a program periodically, showing the output | [man watch](https://man7.org/linux/man-pages/man1/watch.1.html) |
+| `sleep` | `sleep 1000` | delay for a specified amount of time | [man sleep](https://man7.org/linux/man-pages/man1/sleep.1.html) |
+| `jobs` | `jobs` | display status of jobs | [man jobs](https://man7.org/linux/man-pages/man1/jobs.1p.html) |
+| `bg` | `bg` | run jobs in the background | [man bg](https://man7.org/linux/man-pages/man1/bg.1p.html) |
+| `fg` | `fg` | run jobs in the foreground | [man fg](https://man7.org/linux/man-pages/man1/fg.1p.html) |
+| `nice` | `nice -n 10 somecmd` | run a program with modified scheduling priority | [man nice](https://man7.org/linux/man-pages/man1/nice.1.html) |
+| `renice` | `renice -n 9 -p PID` | alter priority of running processes | [man renice](https://man7.org/linux/man-pages/man1/renice.1.html) |
+| `kill` | `kill 1234` | send a signal to a process | [man kill](https://man7.org/linux/man-pages/man1/kill.1.html) |
+| `pidof` | `pidof sleep` | find the process ID of a running program | [man pidof](https://man7.org/linux/man-pages/man1/pidof.1.html) |
+| `pgrep` | `pgrep sleep` | look up processes based on name and attributes | [man pgrep](https://man7.org/linux/man-pages/man1/pgrep.1.html) |
+| `pkill` | `pkill sleep` | signal processes based on name and attributes | [man pkill](https://man7.org/linux/man-pages/man1/pkill.1.html) |
+| `sort` | `sort < somefile` | sort lines of text files | [man sort](https://man7.org/linux/man-pages/man1/sort.1.html) |
+| `tr` | `tr a-z A-Z < somefile` | translate or delete characters | [man tr](https://man7.org/linux/man-pages/man1/tr.1.html) |
+| `tee` | `somecmd \| tee somefile` | read from stdin and write to stdout and files | [man tee](https://man7.org/linux/man-pages/man1/tee.1.html) |
 | `source` | `source ~/.bashrc` | execute commands from a file in the current shell | [man source](https://man7.org/linux/man-pages/man1/dot.1p.html) |
 
 ## What next?

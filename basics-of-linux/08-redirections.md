@@ -44,7 +44,7 @@ Now, let's redirect both streams to their own files while preventing anything fr
 {{USERNAME}}@{{HOSTNAME}}:~$ ls . noexist
 ls: cannot access 'noexist': No such file or directory
 .:
-echo-fd1  echo-fd2  ls-fd1  ls-fd2  my-work  noppe-cli
+hello-fd1  hello-fd2  ls-fd1  ls-fd2  my-work  noppe-cli
 {{USERNAME}}@{{HOSTNAME}}:~$ ls . noexist > ls-out 2> ls-err
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
@@ -58,11 +58,13 @@ Both streams can be redirected to the same file using the following command, for
 {{USERNAME}}@{{HOSTNAME}}:~$ cat ls-both
 ls: cannot access 'noexist': No such file or directory
 .:
-echo-fd1
-echo-fd2
+hello-fd1
+hello-fd2
+ls-both
+ls-err
 ls-fd1
 ls-fd2
-ls-both
+ls-out
 my-work
 noppe-cli
 {{USERNAME}}@{{HOSTNAME}}:~$ █
@@ -76,7 +78,7 @@ In Bash, you can use the shorthand `&>` instead of `2>&1`.
 
 ## Append
 
-Using '>' for redirection will overwrite any existing file. To append to an existing file, use '>>'. Both formats will create the file if it does not already exist.
+Using `>` for redirection will overwrite any existing file. To append to an existing file, use `>>`. Both formats will create the file if it does not already exist.
 
 Execute the command `echo Hello world >> echo-append` three times in a row.
 
@@ -176,7 +178,7 @@ slurm         73      72  0 09:31 ?        00:00:00 : slurmscriptd
 root          98      13  0 09:31 pts/0    00:00:00 login
 user         109      98  0 09:32 pts/0    00:00:00 -bash
 user         121     109  0 09:32 pts/0    00:00:00 ps -ef
-{{USERNAME}}@{{HOSTNAME}}:~$ ps -ef | tail -n +2 | sed -n '3p;5p' | awk '{print $2}' | paste -sd- | bc`
+{{USERNAME}}@{{HOSTNAME}}:~$ ps -ef | tail -n +2 | sed -n '3p;5p' | awk '{print $2}' | paste -sd- | bc
 -55
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
@@ -193,7 +195,7 @@ It is worth noting that piping commands is not always necessary. Consider the `f
 
 Enter the command `sort < fruits.txt`. This will sort the entries in the file alphabetically and display the results in the terminal.
 
-Next, enter the command `sort fruits.txt > sorted.txt`. This time, the results are redirected to a file.
+Next, enter the command `sort < fruits.txt > sorted.txt`. This time, the results are redirected to a file.
 
 Delete the `sorted.txt` file, then run the command `sort < fruits.txt | tee sorted.txt`. Check that the command's output was displayed **and** that the `sorted.txt` file was created with the desired content.
 
