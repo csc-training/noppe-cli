@@ -115,6 +115,9 @@ Hello world
 
 Remove the execute permission (`u-x`) from the `bnry` file, and then try executing it.
 
+:::quiz q-linux-09
+:::
+
 ## System executables
 
 You have now created and executed a couple of executable files yourself. The Linux operating system is full of executables that you have been using, such as `ls`, `rm`, `gcc`, `cat`, `rmdir`, `touch` and so on.

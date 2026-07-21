@@ -61,6 +61,9 @@ total 4
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
+:::quiz q-linux-12
+:::
+
 ### Rename
 
 Some systems have a `rename` command available. If not, use the `mv` command: `mv file-with-old-name same-file-with-new-name`.

@@ -38,3 +38,69 @@
 }
 
 ::q-linux-06::What does the shorthand `~` represent in a file path? {=home directory ####The tilde (~) expands to the current user's home directory, e.g. /home/user.}
+
+// --- Practical "try it, then answer" questions (embedded per chapter) ---
+
+::q-linux-07::You just created textfile. Now run echo Goodbye > textfile and then cat textfile. What appears? {
+=Only "Goodbye" — the single > overwrote the file
+~"Hello World" then "Goodbye" — > added a second line
+~Only "Hello World" — the second command had no effect
+~An error, because textfile already exists
+####A single > truncates the file before writing, so the old contents are lost. Use >> when you want to append instead.
+}
+
+::q-linux-08::You create a hidden file with touch .myfile, but it does not show up in a plain ls. Which option reveals it? {
+=-a
+~-l
+~-h
+~-R
+####Names beginning with a dot are hidden by default. ls -a lists all entries; -A does the same but omits . and ..
+}
+
+::q-linux-09::After running chmod u-x bnry, the command ./bnry still runs normally. {FALSE ####Without the execute bit the kernel refuses to run the file, so you get a Permission denied error — the same one ./scrp gave you before you made it executable.}
+
+::q-linux-10::Run your script with three arguments, e.g. ./scrp one two three. Where does the third argument (three) show up? {
+=Only in the "Command you executed is..." line, which prints $@
+~In the arg2 line, replacing two
+~In a new arg3 line
+~Nowhere — extra arguments are ignored
+####$@ expands to every argument, so three appears there. The script only prints $1 and $2 explicitly, so there is no arg3 line — but the value is still available as $3.
+}
+
+::q-linux-11::Only stdout flows through a pipe. Which command also sends the error from cat noexist into ./repeater? {
+=cat noexist 2>&1 | ./repeater
+~cat noexist 1>&2 | ./repeater
+~cat noexist > ./repeater
+~cat noexist | ./repeater 2>&1
+####2>&1 redirects stderr (2) into stdout (1) before the pipe, so the error joins the stream flowing into ./repeater.
+}
+
+::q-linux-12::Note a file's inode with ls -i, rename it with mv, then check the inode again — the number stays the same. {TRUE ####Renaming with mv (within one filesystem) just points a new name at the same inode. Same file, same data, same inode — only the name changed.}
+
+::q-linux-13::While watch keeps refreshing its ps output, watch the PID of the ps line. What happens to it every couple of seconds? {
+=A new PID appears — watch runs the command afresh each time
+~The PID stays fixed — watch keeps one ps process alive
+~The PID counts down toward zero
+~The PID vanishes until you press a key
+####watch re-executes its command on every refresh, so each cycle spawns a brand-new process with a new PID.
+}
+
+::q-linux-14::Relaunch the noisy loop with its output sent to a file — while true; do sleep 2; echo Hello; done > hello.log & — and your prompt now stays quiet while the loop keeps running. {TRUE ####With stdout redirected to hello.log nothing lands in your terminal, yet the loop keeps filling the file (check it with tail hello.log). Bring it back with fg and stop it with Ctrl+C.}
+
+::q-linux-15::Terminate one background sleep with a plain kill and another with kill -9. How do the shell's completion messages compare? {
+=They differ — kill reports "Terminated", kill -9 reports "Killed"
+~They are identical — both say "Terminated"
+~They are identical — both say "Killed"
+~Neither prints any message
+####A plain kill sends SIGTERM (reported as "Terminated"), while kill -9 sends SIGKILL (reported as "Killed"). The wording tells you which signal ended the process.
+}
+
+::q-linux-16::You appended three lines to echo-append with >>. Now you run echo Hello world > echo-append (a single >) and cat echo-append. How many lines remain? {
+=One — > overwrote the file, discarding the three appended lines
+~Four — > added a fourth line
+~Three — the single > had no effect
+~Zero — > empties the file without writing anything
+####> truncates the file and writes fresh content, so only the new single line survives. >> would have appended, leaving four.
+}
+
+::q-linux-17::Try sort < fruits.txt | tee copy1.txt copy2.txt — tee writes the output to both files at once, as well as to the screen. {TRUE ####tee accepts any number of filenames and writes the stream to all of them plus standard output, handy for saving the same data in several places at once.}

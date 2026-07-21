@@ -29,7 +29,7 @@ Use for genuine warnings: operations that are hard to reverse or behaviours that
 
 ## Quiz types
 
-Questions are stored in `questions.gift` in the course directory and embedded in markdown with `:::quiz <question-id>`. Three question types are supported.
+Questions are stored in `questions.gift` in the course directory and embedded in markdown with `:::quiz <question-id>`. Three question types are supported. They render as **🐾 Walk time** boxes — a hands-on prompt, visually distinct from the reflective 🐶 `question` admonition above.
 
 **Multiple choice** - one correct answer (`=`), any number of wrong answers (`~`). Options are shuffled on each page load.
 

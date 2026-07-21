@@ -26,6 +26,9 @@ emptyfile  my-work  noppe-cli  textfile
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
+:::quiz q-linux-07
+:::
+
 Create yet another file called `d`.
 
 ## Creating directories
@@ -77,15 +80,15 @@ textfile: ASCII text
 
 Type in a command `rm emptyfile` to remove the `emptyfile`. Verify that the file was removed.
 
-Then, try to remove the directory `f` with a command `rm f`.
+Then, try to remove the directory `directory` with a command `rm directory`.
 
 ::: terminal
-{{USERNAME}}@{{HOSTNAME}}:~$ rm f
-rm: cannot remove 'f': Is a directory
+{{USERNAME}}@{{HOSTNAME}}:~$ rm directory
+rm: cannot remove 'directory': Is a directory
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
-Try again with a command `rmdir f`. Verify that the directory was removed.
+Try again with a command `rmdir directory`. Verify that the directory was removed.
 
 Next try to remove the directory `my-work` with a command: `rmdir my-work`.
 
