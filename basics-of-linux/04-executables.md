@@ -58,6 +58,10 @@ You can either use a text editor or enter the command `cat << EOF > main.c` as f
 
 Check out the file type with a `file main.c` command and then compile the file into a binary called `bnry` with gcc: `gcc main.c -o bnry`.
 
+::: note
+Please note that nothing notable will happen when you execute this binary later on.
+:::
+
 Verify that the compilation has succeeded and that a file called `bnry` has appeared in your home directory. Then use the `file` command to check the info of `bnry`.
 
 ::: guidance
@@ -115,8 +119,10 @@ Hello world
 
 Remove the execute permission (`u-x`) from the `bnry` file, and then try executing it.
 
+<!--
 :::quiz q-linux-09
 :::
+-->
 
 ## System executables
 

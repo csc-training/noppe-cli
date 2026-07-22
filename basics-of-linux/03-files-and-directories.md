@@ -26,8 +26,10 @@ emptyfile  my-work  noppe-cli  textfile
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
+<!--
 :::quiz q-linux-07
 :::
+-->
 
 Create yet another file called `d`.
 

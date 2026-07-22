@@ -93,8 +93,10 @@ Hello world
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
+<!--
 :::quiz q-linux-16
 :::
+-->
 
 The append syntax also works when redirecting errors or both streams.
 
@@ -243,7 +245,9 @@ PINEAPPLE
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
+<!--
 :::quiz q-linux-17
 :::
+-->
 
 You can now move on to the [Food for Thought](08.1-food-for-thought.md) section of the chapter.

@@ -61,8 +61,10 @@ total 4
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
+<!--
 :::quiz q-linux-12
 :::
+-->
 
 ### Rename
 

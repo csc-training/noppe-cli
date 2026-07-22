@@ -1,4 +1,4 @@
-# .bashrc
+# Homecoming
 
 ::: beware
 Generated place holder content. Needs work.
