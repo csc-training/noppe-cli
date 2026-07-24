@@ -1,71 +1,44 @@
 # Homecoming
 
-::: beware
-Generated place holder content. Needs work.
+All right. It's now time to put everything you've learnt into practice with the help of a `.bashrc` file.
+
+1. Make sure you are in your home directory. 
+2. Long list the contents of the directory.
+3. Observe the `.bashrc` entry in the listing.
+4. View the file's permissions and contents.
+5. Open the file in a text editor.
+
+Is everything OK so far?
+
+The `.bashrc` file is a script that runs whenever a user logs in. Any actions that you define in this file will be performed and available throughout your session.
+
+Great, let's continue.
+
+6. Add the following aliases: `alias k9='kill -9` and `alias ...='cd ../..'`
+7. Create a permanent PS1 for your sessions: `PS1='\h \w \$ '`
+
+Save the file and then exit the text editor. Next, run the `source .bashrc` command to activate the file without having to log out and back in again. Start the `sleep 1000` command in the background, then terminate it using your new `k9` alias.
+
+::: terminal
+{{USERNAME}}@{{HOSTNAME}}:~$ source .bashrc 
+{{HOSTNAME}} ~ $ sleep 1000 &
+[1] 490
+{{HOSTNAME}} ~ $ k9 490
+{{HOSTNAME}} ~ $ 
+[1]+  Killed                  sleep 1000
+{{HOSTNAME}} ~ $ █
 :::
 
-Every time you open a new interactive terminal session, Bash runs a script called `.bashrc` from your home directory. It is a regular text file that you can edit to configure your shell environment: define aliases, customise the prompt, and add your own functions.
+Still with me? Great, let's move on.
 
-Let's look at what is already in it.
+8. Add the following and remove the previous PS1 of yours.
 
-## Viewing .bashrc
+```sh
+# Location for weather lookup
+LOCATION="Helsinki"
 
-Use `cat ~/.bashrc` or `less ~/.bashrc` to read the current file.
-
-::: note
-Files whose names begin with a `.` are hidden by default. Use `ls -la` to see them.
-:::
-
-## Aliases
-
-An alias is a shortcut for a longer command. You define one with the syntax `alias name='command'`.
-
-Open `.bashrc` in a text editor and add the following lines:
-
-```bash
-alias ll='ls -la'
-alias ..='cd ..'
-```
-
-After saving, reload the file with `source ~/.bashrc`. Now try out `ll` and `..`.
-
-::: tip
-`source` (or its shorthand `.`) executes a file in the current shell session, so changes take effect immediately without opening a new terminal.
-:::
-
-::: question
-Can you come up with an alias of your own?
-:::
-
-## Customising PS1
-
-We experimented with `PS1` temporarily in [chapter 1.1](01.1-cli.md). Adding the assignment to `.bashrc` makes it permanent.
-
-Add a custom `PS1` to your `.bashrc`:
-
-```bash
-PS1='\u@\h \w \$ '
-```
-
-Reload with `source ~/.bashrc` and observe the change.
-
-## Weather in PS1
-
-As a finishing touch, let's pull in live weather data. The service `wttr.in` provides a compact one-liner format:
-
-```
-curl -s "wttr.in/Helsinki?format=1"
-```
-
-This returns something like `⛅ +15°C` — short enough to sit comfortably in a prompt.
-
-To avoid slowing down every prompt redraw, we fetch the data once in the background when the terminal opens and cache the result in `~/.weather`. A small function then reads that file each time the prompt is drawn.
-
-Add the following to your `.bashrc`:
-
-```bash
 # Fetch weather in the background on login
-curl -s --max-time 3 "wttr.in/Helsinki?format=1" > ~/.weather 2>/dev/null &
+curl -s --max-time 3 "wttr.in/${LOCATION}?format=1" > ~/.weather 2>/dev/null &
 
 # Read weather from the cache
 get_weather() {
@@ -73,17 +46,10 @@ get_weather() {
 }
 
 # Prompt with weather
-PS1='\u@\h:\w $(get_weather) \$ '
+PS1='\u@\h:\w $(get_weather)@'"${LOCATION}"' \$ '
 ```
 
-::: note
-Single quotes around the `PS1` value are important here. They prevent `$(get_weather)` from being evaluated once at assignment — instead it is called fresh on every prompt display.
-:::
-
-Reload with `source ~/.bashrc`. Open a new terminal session and watch the weather appear.
-
-::: question
-Can you change the city to your own location? What other `?format=` values does `wttr.in` support?
-:::
+9. Save the file, exit the editor, log out of your session and log back in.
+10. Verify the changed PS1 and the functionality of the aliases.
 
 Now let's wrap things up in the [Afterword](10-afterword.md).
