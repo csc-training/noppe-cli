@@ -12,7 +12,7 @@ First, log in the Linux machine. The login is `{{USERNAME}}` and `{{PASSWORD}}`:
 
 ::: terminal
 {{HOSTNAME}} login: {{USERNAME}}
-Password:
+Password: █
 :::
 
 ::: guidance

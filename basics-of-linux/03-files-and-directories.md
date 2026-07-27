@@ -2,6 +2,10 @@
 
 Let's start by creating some files. But first - make sure that you are in your home directory.
 
+::: guidance
+To clear the terminal view and start afresh, press `Ctrl+L`.
+:::
+
 ## Creating files
 
 Type in a command: `touch emptyfile`.
