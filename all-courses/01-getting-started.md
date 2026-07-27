@@ -16,6 +16,16 @@ The home directory contains the `my-work` and `noppe-cli` directories by default
 
 The current Linux version running in the container is Ubuntu 24.04 LTS, but you can verify the exact version using the command `cat /etc/os-release`.
 
+### search
+
+The search functionality is harnessed as a 'grep exercise'.
+
+The material is available as plain text in md files in the `noppe-cli` directory. Use the [grep command](basics-of-linux/06.1-view.md#grep) to search for topics or keywords that interest you.
+
+For example, entering the command: `grep '\bgrep\b' basics-of-linux/*.md` will locate all md files containing the word `grep` in [Basics of Linux](basics-of-linux/00-toc.md) material.
+
+To see only the titles containing the word 'grep', use the command `grep -i "^#.*grep" basics-of-linux/*.md`.
+
 # In education
 
 If you would like to use this environment in a more controlled way for teaching purposes and have the `my-work` permanent storage enabled, for example, consider using the Noppe Workspaces as a teacher. Further information is available on the CSC Docs website: [Noppe Guide for teachers and collaborators](https://docs.csc.fi/cloud/noppe/guide_for_teachers/).
