@@ -1,5 +1,4 @@
-Array jobs
----
+# Array jobs
 
 If you want to run the same program but with differing input, then you can use the Slurm feature called an array job.
 Array jobs allow you to queue many jobs without overburdening the system with an excessive number of jobs.
@@ -40,12 +39,12 @@ A queue with array jobs might look something like this
 
 ```plaintext
 JOBID       PARTITION   NAME        USER    ST      TIME    NODES
-4           learning    slurmscr    user    PD      0:00        1
-5           learning    slurmscr    user    PD      0:00        1
-2_[2-4%2]   learning    array_jo    user    PD      0:00        1
-2_0         learning    array_jo    user    R       0:08        1
-2_1         learning    array_jo    user    R       0:08        1
-3           learning    slurmscr    user    R       0:07        1
+4           learning    slurmscr    {{USERNAME}}    PD      0:00        1
+5           learning    slurmscr    {{USERNAME}}    PD      0:00        1
+2_[2-4%2]   learning    array_jo    {{USERNAME}}    PD      0:00        1
+2_0         learning    array_jo    {{USERNAME}}    R       0:08        1
+2_1         learning    array_jo    {{USERNAME}}    R       0:08        1
+3           learning    slurmscr    {{USERNAME}}    R       0:07        1
 ```
 
 Here the jobs with indices 0 and 1 of the array job with jobid 2 is currently running with the rest pending.

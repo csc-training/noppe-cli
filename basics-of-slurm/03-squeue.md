@@ -1,17 +1,16 @@
-The queue
----------
+# The queue
 
 When you want to see the current job queue you can use the command `squeue`.
 Running it on a system with many tasks in queue one can get something like this:
 
 ```plaintext
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-    4  learning slurmscr     user PD       0:00      1 (Resources)
-    5  learning slurmscr     user PD       0:00      1 (Priority)
-    6  learning slurmscr     user PD       0:00      1 (Priority)
-    7  learning slurmscr     user PD       0:00      1 (Priority)
-    2  learning slurmscr     user  R       0:08      1 linux0
-    3  learning slurmscr     user  R       0:07      1 linux0
+    4  learning slurmscr     {{USERNAME}} PD       0:00      1 (Resources)
+    5  learning slurmscr     {{USERNAME}} PD       0:00      1 (Priority)
+    6  learning slurmscr     {{USERNAME}} PD       0:00      1 (Priority)
+    7  learning slurmscr     {{USERNAME}} PD       0:00      1 (Priority)
+    2  learning slurmscr     {{USERNAME}}  R       0:08      1 {{HOSTNAME}}
+    3  learning slurmscr     {{USERNAME}}  R       0:07      1 {{HOSTNAME}}
 ```
 
 Here we can see that the jobs with ID 2 and 3 are running because ST (state) is R (running). The rest are pending and that can be seen by their state PD.
@@ -22,6 +21,6 @@ This will sort the list such that the next job will be on top.
 
 If you want to see it for a specific partition then you can use `squeue --priority --sort=-p,i --states=PD -p [partition_name]` where `[partition_name]` is change with the partition name.
 
-Exercises
----
+## Exercises
+
 1. Use `squeue --help` to browse the possible arguments squeue accepts.

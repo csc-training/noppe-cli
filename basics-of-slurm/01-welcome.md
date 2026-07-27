@@ -1,5 +1,4 @@
-Welcome
--------
+# Welcome
 
 Welcome to this interactive Slurm tutorial.
 In this tutorial you will be guided through the process of using Slurm.

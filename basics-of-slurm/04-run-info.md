@@ -1,5 +1,4 @@
-Running your own code
----------------------
+# Running your own code
 
 Running you code can be done in three different ways. These are `sbatch`, `srun` and `salloc`.
 

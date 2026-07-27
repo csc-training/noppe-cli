@@ -1,5 +1,4 @@
-Memory limit
----
+# Memory limit
 
 The memory limit is a parameter in Slurm that is used to give you a node, which fits to your needs.
 Usually a HPC installation will have nodes with varying amounts of memory, so it can handle jobs of different sizes.
@@ -13,22 +12,22 @@ If you try to use more memory that there is available, then your job will be kil
 Estimating memory is of course not an easy task, but running smaller test cases while monitoring memory usage can give a baseline.
 The baseline can the be multiplied while adding some overhead (10-20%) to give an idea of memory usage.
 
-Exercises
----
+## Exercises
 
 Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/limits/memory/`.
+You can also [view the full source](07.1-source.md) rendered here.
 
 1. Submit the job.
 2. The job should be killed by Slurm.
    1. Why?
 
-      ```answer
+      ::: solution
       It used too much memory. It got killed by the OOM killer.
-      ```
+      :::
 3. Describe how to properly choose a memory limit for a job.
 
-   ```answer
+   ::: solution
    It is a case of trial and error.
    Running test programs and monitoring their usages can help.
    You can then multiply the baseline and add 10-20%.
-   ```
+   :::

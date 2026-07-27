@@ -1,5 +1,4 @@
-Time limit
----
+# Time limit
 
 The time limit serves two main purposes and should always be included in Slurm scripts.
 
@@ -18,32 +17,32 @@ When setting time limits for jobs one should estimate how much time each job is 
 As a rule of thumb the time limit should be somewhere between 110% and 120% of the expected run time.
 One can use benchmark tests for such estimates if those are available &mdash; otherwise it is a matter of trial and error.
 
-Exercises
----
+## Exercises
 
 Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/limits/time/`.
+You can also [view the full source](06.1-source.md) rendered here.
 
 1. Submit the job.
 2. The job should be killed by Slurm.
    1. Why?
 
-      ```answer
+      ::: solution
       It runs over the time limit set by the Slurm script
-      ```
+      :::
    2. Fix the problem in the Slurm script.
 
-      ```answer
+      ::: solution
       In the slurm script change:
-      #SBATCH --time=00:01:00
+      `#SBATCH --time=00:01:00`
       To:
-      #SBATCH --time=00:02:00
+      `#SBATCH --time=00:02:00`
 
-      Or reduce the amount of sleep in main.cpp
-      ```
+      Or reduce the amount of sleep in `main.cpp`
+      :::
 3. Describe how to properly choose a time limit for a job.
 
-   ```answer
+   ::: solution
    Run some benchmarks, for estimates, or use trial and error.
    You should also add 10-20% to your estimate to make sure
    that the job does not run out of time.
-   ```
+   :::

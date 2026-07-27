@@ -208,9 +208,19 @@
                     "file": "05-hello-world.md"
                 },
                 {
+                    "id": "05.1-source",
+                    "title": "5.1 Source code",
+                    "file": "05.1-source.md"
+                },
+                {
                     "id": "06-time-lim",
                     "title": "6. Time limit",
                     "file": "06-time-lim.md"
+                },
+                {
+                    "id": "06.1-source",
+                    "title": "6.1 Source code",
+                    "file": "06.1-source.md"
                 },
                 {
                     "id": "07-memory-lim",
@@ -218,9 +228,19 @@
                     "file": "07-memory-lim.md"
                 },
                 {
+                    "id": "07.1-source",
+                    "title": "7.1 Source code",
+                    "file": "07.1-source.md"
+                },
+                {
                     "id": "08-run-file",
                     "title": "8. Run files",
                     "file": "08-run-file.md"
+                },
+                {
+                    "id": "08.1-source",
+                    "title": "8.1 Source code",
+                    "file": "08.1-source.md"
                 },
                 {
                     "id": "09-omp",
@@ -228,9 +248,19 @@
                     "file": "09-omp.md"
                 },
                 {
+                    "id": "09.1-source",
+                    "title": "9.1 Source code",
+                    "file": "09.1-source.md"
+                },
+                {
                     "id": "10-mpi",
                     "title": "10. Distributed memory parallelized job",
                     "file": "10-mpi.md"
+                },
+                {
+                    "id": "10.1-source",
+                    "title": "10.1 Source code",
+                    "file": "10.1-source.md"
                 },
                 {
                     "id": "11-nested-par",
@@ -238,9 +268,19 @@
                     "file": "11-nested-par.md"
                 },
                 {
+                    "id": "11.1-source",
+                    "title": "11.1 Source code",
+                    "file": "11.1-source.md"
+                },
+                {
                     "id": "12-mult-node",
                     "title": "12. Multiple nodes",
                     "file": "12-mult-node.md"
+                },
+                {
+                    "id": "12.1-source",
+                    "title": "12.1 Source code",
+                    "file": "12.1-source.md"
                 },
                 {
                     "id": "13-array",
@@ -251,6 +291,11 @@
                     "id": "14-array-run",
                     "title": "14. Running array jobs",
                     "file": "14-array-run.md"
+                },
+                {
+                    "id": "14.1-source",
+                    "title": "14.1 Source code",
+                    "file": "14.1-source.md"
                 },
                 {
                     "id": "15-tips",

@@ -1,5 +1,4 @@
-Running array jobs
----
+# Running array jobs
 
 To write job scripts for array jobs one needs variables to access the numbers that identify each job in the array.
 
@@ -29,61 +28,68 @@ to redirect the standard output to `job<array_index>_out.txt`.
 When using shell scripts one needs to remember that bash first performs a variable substitution when creating the Slurm script before Slurm can perform its variable substitution.
 In that case one thus needs to remember to escape the bash substitution for Slurm variables using `\`.
 
-Exercises
----
+## Exercises
+
 Please navigate to the directory `~/noppe-cli/basics-of-slurm/src/array_job/cpp/` where you will find a Hello World program in C++ that takes the array index and array length as input, a Makefile and a job script.
+You can also [view the full source](14.1-source.md) rendered here.
 
 1. Add comments to the job script such that you comfortably understand the code.
 2. Run the script and check that it worked as intended.
 3. *Extra*: Redo the above exercises for the other language
 
-  ```answer
-  For Fortran:
-  make_run_file() {
-  cat > $1.sh <<%EOF%
-  #!/bin/bash
-  #SBATCH --job-name=$1
-  #SBATCH --mem=50M
-  #SBATCH --time=00:00:30
-  #SBATCH --array=$2-$3%$4
-  #SBATCH --output=job%a_out.txt
-  #SBATCH --error=job%a_err.txt
+   ::: solution
+   **Fortran:**
 
-  make
-  ./main.exe \$SLURM_ARRAY_TASK_ID $3
+   ```bash
+   make_run_file() {
+   cat > $1.sh <<%EOF%
+   #!/bin/bash
+   #SBATCH --job-name=$1
+   #SBATCH --mem=50M
+   #SBATCH --time=00:00:30
+   #SBATCH --array=$2-$3%$4
+   #SBATCH --output=job%a_out.txt
+   #SBATCH --error=job%a_err.txt
 
-  %EOF%
-  }
+   make
+   ./main.exe \$SLURM_ARRAY_TASK_ID $3
 
-  name=array_job
-  job_index0=0
-  arr_len=3
-  max_num_con=2
+   %EOF%
+   }
 
-  make_run_file $name $job_index0 $arr_len $max_num_con
-  sbatch $name.sh
+   name=array_job
+   job_index0=0
+   arr_len=3
+   max_num_con=2
 
-  For Python:
-  make_run_file() {
-  cat > $1.sh <<%EOF%
-  #!/bin/bash
-  #SBATCH --job-name=$1
-  #SBATCH --mem=50M
-  #SBATCH --time=00:00:30
-  #SBATCH --array=$2-$3%$4
-  #SBATCH --output=job%a_out.txt
-  #SBATCH --error=job%a_err.txt
+   make_run_file $name $job_index0 $arr_len $max_num_con
+   sbatch $name.sh
+   ```
 
-  python3 main.py --job_num=\$SLURM_ARRAY_TASK_ID --arr_len=$3
+   **Python:**
 
-  %EOF%
-  }
+   ```bash
+   make_run_file() {
+   cat > $1.sh <<%EOF%
+   #!/bin/bash
+   #SBATCH --job-name=$1
+   #SBATCH --mem=50M
+   #SBATCH --time=00:00:30
+   #SBATCH --array=$2-$3%$4
+   #SBATCH --output=job%a_out.txt
+   #SBATCH --error=job%a_err.txt
 
-  name=array_job
-  job_index0=0
-  arr_len=3
-  max_num_con=2
+   python3 main.py --job_num=\$SLURM_ARRAY_TASK_ID --arr_len=$3
 
-  make_run_file $name $job_index0 $arr_len $max_num_con
-  sbatch $name.sh
-  ```
+   %EOF%
+   }
+
+   name=array_job
+   job_index0=0
+   arr_len=3
+   max_num_con=2
+
+   make_run_file $name $job_index0 $arr_len $max_num_con
+   sbatch $name.sh
+   ```
+   :::
