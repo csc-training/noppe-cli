@@ -144,8 +144,8 @@ First, execute the command `which rm`, then `file /usr/bin/rm`. Repeat for as ma
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
-::: note
-The `which` command reports the single executable that the shell would actually run for a given command. A related command, `whereis`, instead searches a fixed set of standard locations and also finds a command's **source** and **manual page** files — handy when you need more than just the binary. Try `whereis rm` to compare.
+::: tip
+If the `which` command is not installed on your system, you can use the `type` command instead. Alternatively, you can use the `whereis` command. Try entering `type rm` and `which rm`, for example.
 :::
 
 The next chapter is about [Arguments](04.1-arguments.md).
