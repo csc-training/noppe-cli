@@ -128,20 +128,24 @@ Remove the execute permission (`u-x`) from the `bnry` file, and then try executi
 
 You have now created and executed a couple of executable files yourself. The Linux operating system is full of executables that you have been using, such as `ls`, `rm`, `gcc`, `cat`, `rmdir`, `touch` and so on.
 
-You can use the `whereis` command to find the files in the system. This prints the absolute path of the executable, which can then be examined using the `file` command.
+You can use the `which` command to find the executable in the system. This prints the absolute path of the executable that would run when you type the command, which can then be examined using the `file` command.
 
-First, execute the command `whereis rm`, then `file /usr/bin/rm`. Repeat for as many other system executables as you wish.
+First, execute the command `which rm`, then `file /usr/bin/rm`. Repeat for as many other system executables as you wish.
 
 ::: terminal
-{{USERNAME}}@{{HOSTNAME}}:~$ whereis rm
+{{USERNAME}}@{{HOSTNAME}}:~$ which rm
 /usr/bin/rm
 {{USERNAME}}@{{HOSTNAME}}:~$ file /usr/bin/rm
 /usr/bin/rm: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=c851b88cc2a078328d400214f39f232433195081, for GNU/Linux 3.2.0, stripped
-{{USERNAME}}@{{HOSTNAME}}:~$ whereis fgrep
+{{USERNAME}}@{{HOSTNAME}}:~$ which fgrep
 /usr/bin/fgrep
 {{USERNAME}}@{{HOSTNAME}}:~$ file /usr/bin/fgrep
 /usr/bin/fgrep: POSIX shell script, ASCII text executable
 {{USERNAME}}@{{HOSTNAME}}:~$ █
+:::
+
+::: note
+The `which` command reports the single executable that the shell would actually run for a given command. A related command, `whereis`, instead searches a fixed set of standard locations and also finds a command's **source** and **manual page** files — handy when you need more than just the binary. Try `whereis rm` to compare.
 :::
 
 The next chapter is about [Arguments](04.1-arguments.md).

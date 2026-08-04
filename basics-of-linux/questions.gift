@@ -104,3 +104,11 @@
 }
 
 ::q-linux-17::Try sort < fruits.txt | tee copy1.txt copy2.txt — tee writes the output to both files at once, as well as to the screen. {TRUE ####tee accepts any number of filenames and writes the stream to all of them plus standard output, handy for saving the same data in several places at once.}
+
+::q-linux-18::Run sleep 1000 &, then disown, then jobs. What does jobs show? {
+=Nothing — disown removed the job from the shell's job table
+~The sleep job, still listed as running
+~An error, because the job no longer exists
+~The job, but marked as Stopped
+####disown drops the job from the shell's bookkeeping, so jobs, fg and bg can no longer see it. The process itself keeps running — find it with ps and stop it with kill <PID>.
+}

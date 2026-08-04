@@ -10,7 +10,9 @@ All right. It's now time to put everything you've learnt into practice with the 
 
 Is everything OK so far?
 
+::: guidance
 The `.bashrc` file is a script that runs whenever a user logs in. Any actions that you define in this file will be performed and available throughout your session.
+:::
 
 Great, let's continue.
 

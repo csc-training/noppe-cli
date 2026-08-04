@@ -73,7 +73,7 @@ noppe-cli
 The `2>&1` can be interpreted as meaning 'redirect file descriptor 2 into file descriptor 1'.
 
 ::: tip
-In Bash, you can use the shorthand `&>` instead of `2>&1`.
+In Bash, `cmd &> file` redirects both stdout and stderr of 'cmd' to the `file`, which is equivalent to `cmd > file 2>&1`.
 :::
 
 ## Append

@@ -41,10 +41,13 @@ This list shows all the commands that you have used so far.
 | `stat` | `stat somefile` | display file or file system status | [man stat](https://man7.org/linux/man-pages/man1/stat.1.html) |
 | `ln` | `ln target link` | make links between files | [man ln](https://man7.org/linux/man-pages/man1/ln.1.html) |
 | `du` | `du -h` | estimate file space usage | [man du](https://man7.org/linux/man-pages/man1/du.1.html) |
+| `which` | `which rm` | locate a command's executable | [man which](https://man7.org/linux/man-pages/man1/which.1.html) |
 | `whereis` | `whereis rm` | locate the binary, source, and manual page files for a command | [man whereis](https://man7.org/linux/man-pages/man1/whereis.1.html) |
 | `gcc` | `gcc main.c -o main` | GNU project C and C++ compiler | [man gcc](https://man7.org/linux/man-pages/man1/gcc.1.html) |
 | `env` | `env` | set the environment for command invocation | [man env](https://man7.org/linux/man-pages/man1/env.1.html) |
 | `grep` | `grep text fromfile` | print lines that match patterns | [man grep](https://man7.org/linux/man-pages/man1/grep.1.html) |
+| `alias` | `alias derp="kill -9"` | define or display aliases | [man alias](https://man7.org/linux/man-pages/man1/alias.1p.html) |
 | `man` | `man rm` | display system documentation | [man man](https://man7.org/linux/man-pages/man1/man.1.html) |
+| `info` | `info coreutils` | read a command's info manual | [man info](https://manpages.ubuntu.com/manpages/noble/en/man1/info.1.html) |
 
 Are you ready to continue your adventure? The [next chapter](06-working-with-files.md) awaits!
