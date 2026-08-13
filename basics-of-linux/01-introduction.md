@@ -33,4 +33,4 @@ Type in a command `exit` and press `Enter ↵`.
 
 You managed to log out? Great!
 
-Now log back in and continue to [the CLI chapter](01.1-cli.md).
+**Now log back in** and continue to [the CLI chapter](01.1-cli.md).

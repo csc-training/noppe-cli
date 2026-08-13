@@ -105,7 +105,7 @@ rmdir: failed to remove 'my-work': Directory not empty
 :::
 
 ::: beware
-It is possible to delete an entire directory (`rm -fr`), including all its files and subdirectories, but let's not just now.
+It is possible to delete an entire directory (`rm -fr`), including all its files and subdirectories, but let's not do that just now.
 :::
 
 Use the `rm` and `rmdir` commands to clean up the home directory and remove any other files and directories you have created, until only the `my-work` and `noppe-cli` directories remain.

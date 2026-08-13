@@ -1,8 +1,8 @@
 # Executables
 
-This chapter could have been included as a subchapter of the previous chapter, 'Files and directories', but for now, let's give it its own chapter.
+Since executable files are essentially just scripts or compiled binary _files_ in Linux, this chapter could have been included as a subchapter of previous one.
 
-In Linux, executable files are scripts or compiled binaries.
+However, as the topic is quite detailed, it has been given its own chapter.
 
 ## Script
 

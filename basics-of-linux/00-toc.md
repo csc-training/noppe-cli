@@ -2,6 +2,12 @@
 
 Welcome to the Linux Basics material.
 
+::: service
+_Message from the author:_ This material is designed for multiple reads. Skim through it, pick the topics that interest you, and skip the ones that don't. You may then wish to return to the material and read it again.
+
+Use other sources of information to support your learning - there is no single ultimate source or way to learn. Naturally I hope this material helps you on your journey. Happy learning!
+:::
+
 ## Table of contents
 
 1. [Introduction](01-introduction.md)
