@@ -26,7 +26,7 @@ The `>` redirects the command's output. In this case it redirects it into a file
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ echo Hello World > textfile
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-emptyfile  my-work  noppe-cli  textfile
+emptyfile  noppe-cli  textfile
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
@@ -56,7 +56,7 @@ List the content of your home directory with the `ls` command.
 
 ::: terminal
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-d  directory  emptyfile  f  my-work  noppe-cli  textfile
+d  directory  emptyfile  f  noppe-cli  textfile
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
@@ -73,8 +73,6 @@ directory: directory
 emptyfile: empty
 {{USERNAME}}@{{HOSTNAME}}:~$ file f
 f: directory
-{{USERNAME}}@{{HOSTNAME}}:~$ file my-work
-my-work: directory
 {{USERNAME}}@{{HOSTNAME}}:~$ file noppe-cli
 noppe-cli: directory
 {{USERNAME}}@{{HOSTNAME}}:~$ file textfile
@@ -96,11 +94,11 @@ rm: cannot remove 'directory': Is a directory
 
 Try again with a command `rmdir directory`. Verify that the directory was removed.
 
-Next try to remove the directory `my-work` with a command: `rmdir my-work`.
+Next try to remove the directory `noppe-cli` with a command: `rmdir noppe-cli`.
 
 ::: terminal
-{{USERNAME}}@{{HOSTNAME}}:~$ rmdir my-work
-rmdir: failed to remove 'my-work': Directory not empty
+{{USERNAME}}@{{HOSTNAME}}:~$ rmdir noppe-cli
+rmdir: failed to remove 'noppe-cli': Directory not empty
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
@@ -108,6 +106,6 @@ rmdir: failed to remove 'my-work': Directory not empty
 It is possible to delete an entire directory (`rm -fr`), including all its files and subdirectories, but let's not do that just now.
 :::
 
-Use the `rm` and `rmdir` commands to clean up the home directory and remove any other files and directories you have created, until only the `my-work` and `noppe-cli` directories remain.
+Use the `rm` and `rmdir` commands to clean up the home directory and remove any other files and directories you have created, until only the `noppe-cli` directory remains.
 
 Then let's have a look at [File properties](03.1-file-properties.md).

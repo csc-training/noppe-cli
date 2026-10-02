@@ -44,7 +44,7 @@ Now, let's redirect both streams to their own files while preventing anything fr
 {{USERNAME}}@{{HOSTNAME}}:~$ ls . noexist
 ls: cannot access 'noexist': No such file or directory
 .:
-hello-fd1  hello-fd2  ls-fd1  ls-fd2  my-work  noppe-cli
+hello-fd1  hello-fd2  ls-fd1  ls-fd2  noppe-cli
 {{USERNAME}}@{{HOSTNAME}}:~$ ls . noexist > ls-out 2> ls-err
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
@@ -65,7 +65,6 @@ ls-err
 ls-fd1
 ls-fd2
 ls-out
-my-work
 noppe-cli
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
@@ -127,7 +126,7 @@ Then enter the command `bash < fruit-maker`. Verify the result using the `ls` an
 {{USERNAME}}@{{HOSTNAME}}:~$ vim fruit-maker
 {{USERNAME}}@{{HOSTNAME}}:~$ bash < fruit-maker
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-fruits.txt  my-work  noppe-cli
+fruits.txt  noppe-cli
 {{USERNAME}}@{{HOSTNAME}}:~$ cat fruits.txt
 pineapple
 banana
@@ -212,7 +211,7 @@ mango
 orange
 pineapple
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-fruits.txt  my-work  noppe-cli  sorted.txt
+fruits.txt  noppe-cli  sorted.txt
 {{USERNAME}}@{{HOSTNAME}}:~$ cat sorted.txt
 apple
 banana

@@ -75,7 +75,7 @@ So, in summary, the view should be as follows:
 main.c: C source, ASCII text
 {{USERNAME}}@{{HOSTNAME}}:~$ gcc main.c -o bnry
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-bnry  main.c  my-work  noppe-cli  scrp
+bnry  main.c  noppe-cli  scrp
 {{USERNAME}}@{{HOSTNAME}}:~$ file bnry
 bnry: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=bd81384dbb49670453331f07c855728653ba4136, for GNU/Linux 3.2.0, not stripped
 {{USERNAME}}@{{HOSTNAME}}:~$ █

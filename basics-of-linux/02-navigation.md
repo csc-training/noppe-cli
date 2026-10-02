@@ -62,18 +62,17 @@ Now, let's return to our home directory.
 {{USERNAME}}@{{HOSTNAME}}:/home$ pwd
 /home
 {{USERNAME}}@{{HOSTNAME}}:/home$ ls
-ubuntu  {{USERNAME}}
+{{USERNAME}}
 {{USERNAME}}@{{HOSTNAME}}:/home$ cd {{USERNAME}}
 {{USERNAME}}@{{HOSTNAME}}:~$ pwd
 /home/{{USERNAME}}
 {{USERNAME}}@{{HOSTNAME}}:~$ ls
-my-work  noppe-cli
+noppe-cli
 {{USERNAME}}@{{HOSTNAME}}:~$ █
 :::
 
 ::: question
 1. If you type in a command `cd ..` - what directory will you end up in?
-2. If you try to enter user's `ubuntu` home directory - what happens?
 :::
 
 Next continue to [the Food for Thought of the Navigation](02.1-food-for-thought.md).
